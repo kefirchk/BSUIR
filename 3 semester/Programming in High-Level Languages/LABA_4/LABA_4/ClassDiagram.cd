@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TreeNode&lt;T&gt;">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAgAAIAAAAAAAAAJAACBAIAACAAAAQAAAAgAA=</HashCode>
+      <FileName>BinaryTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree&lt;T&gt;">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACEAAgACggAAAAgEAACEAAAQAAACABACAACAAA=</HashCode>
+      <FileName>BinaryTree.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="root" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CountingMachine">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAAGAAAgAAAgAAAAAAAEQAAAgAAAgBABEAAA=</HashCode>
+      <FileName>CountingMachine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interface&lt;T&gt;">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAgAAAABAAAAQAAAEEAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monoblock">
+    <Position X="12.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAAAKAAEAAAAAAAgAAUAAAIQyQAAAAAAgRAAEAAA=</HashCode>
+      <FileName>Monoblock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notebook">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgADAAEAAAEAAAgAARAAAAAgIAACAAAgTgAEAAA=</HashCode>
+      <FileName>Notebook.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortableCM">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAUAAAAAAAgAAAAABAEAAAAAAAAgBAAEAAA=</HashCode>
+      <FileName>PortableCM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smartphone">
+    <Position X="6" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAEAAAAAQIgEAQAAAAAgBABAAAAwRgAEAAA=</HashCode>
+      <FileName>Smartphone.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StationaryCM">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAEAAAgAAAgAAAACACAAAAAAAAAgBAAGAAA=</HashCode>
+      <FileName>StationaryCM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
