@@ -1,0 +1,2 @@
+apple              |2500     at home            |apple 1            |apple 2            |
+lg                 |3000     office             |logitech c40       |logitech dragon    |
