@@ -1,0 +1,72 @@
+﻿  BinaryTree.cpp
+  BinFile.cpp
+  CountingMachine.cpp
+  Exception.cpp
+  File.cpp
+  Functions.cpp
+  Interface.cpp
+  main.cpp
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\BinaryTree.cpp(223,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\BinaryTree.cpp(218): message : во время компиляции функции-члена класс шаблон "void BinaryTree<T>::uniteTrees(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(144): message : выполняется компиляция ссылки на экземпляр шаблон функции "void BinaryTree<T>::uniteTrees(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(56): message : во время компиляции функции-члена класс шаблон "void Interface<Monoblock>::subMenu(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(31): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<Monoblock>::subMenu(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(8): message : во время компиляции функции-члена класс шаблон "void Interface<char>::mainMenu(void)"
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\main.cpp(27): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<char>::mainMenu(void)"
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\main.cpp(26): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Interface<char>"
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\TxtFile.cpp(47,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\TxtFile.cpp(40): message : во время компиляции функции-члена класс шаблон "void TxtFile<T>::writeInFile(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(163): message : выполняется компиляция ссылки на экземпляр шаблон функции "void TxtFile<T>::writeInFile(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(59): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "TxtFile<T>"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\BinFile.cpp(46,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\BinFile.cpp(40): message : во время компиляции функции-члена класс шаблон "void BinFile<T>::writeInFile(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(130): message : выполняется компиляция ссылки на экземпляр шаблон функции "void BinFile<T>::writeInFile(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_6\LABA_6\Interface.cpp(60): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "BinFile<T>"
+          with
+          [
+              T=Monoblock
+          ]
+  Monoblock.cpp
+  Notebook.cpp
+  PortableCM.cpp
+  Smartphone.cpp
+  StationaryCM.cpp
+  TxtFile.cpp
+  Создание кода...
+  LABA_6.vcxproj -> D:\Projects\P_in_HLL projects\3 semester\LABA_6\Debug\LABA_6.exe
