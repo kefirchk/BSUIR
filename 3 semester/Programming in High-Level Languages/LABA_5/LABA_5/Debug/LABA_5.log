@@ -1,0 +1,30 @@
+﻿  BinaryTree.cpp
+  CountingMachine.cpp
+  Exception.cpp
+  Functions.cpp
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Functions.cpp(88,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Functions.cpp(97,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Functions.cpp(69,6): warning C4101: value: неиспользованная локальная переменная
+  Interface.cpp
+  main.cpp
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Interface.cpp(66,7): warning C4101: s: неиспользованная локальная переменная
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Interface.cpp(61): message : во время компиляции функции-члена класс шаблон "void Interface<Monoblock>::subMenu(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Interface.cpp(31): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<Monoblock>::subMenu(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\Interface.cpp(8): message : во время компиляции функции-члена класс шаблон "void Interface<char>::mainMenu(void)"
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\main.cpp(26): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<char>::mainMenu(void)"
+D:\Projects\P_in_HLL projects\3 semester\LABA_5\LABA_5\main.cpp(25): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Interface<char>"
+  Monoblock.cpp
+  Notebook.cpp
+  PortableCM.cpp
+  Smartphone.cpp
+  StationaryCM.cpp
+  Создание кода...
+  LABA_5.vcxproj -> D:\Projects\P_in_HLL projects\3 semester\LABA_5\Debug\LABA_5.exe
