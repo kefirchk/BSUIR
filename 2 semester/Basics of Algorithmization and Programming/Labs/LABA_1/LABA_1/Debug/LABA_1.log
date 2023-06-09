@@ -1,0 +1,7 @@
+﻿  main.cpp
+d:\projects\oaandp_projects\laba_1\laba_1\main.cpp(60): warning C4477: "fscanf_s": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "1" имеет тип "int"
+d:\projects\oaandp_projects\laba_1\laba_1\main.cpp(74): warning C4473: "fscanf_s": передано недостаточно аргументов для строки формата
+  d:\projects\oaandp_projects\laba_1\laba_1\main.cpp(74): note: заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+  d:\projects\oaandp_projects\laba_1\laba_1\main.cpp(74): note: отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+  d:\projects\oaandp_projects\laba_1\laba_1\main.cpp(74): note: этот аргумент используется в качестве размера буфера
+  LABA_1.vcxproj -> D:\Projects\OAandP_projects\LABA_1\Debug\LABA_1.exe
