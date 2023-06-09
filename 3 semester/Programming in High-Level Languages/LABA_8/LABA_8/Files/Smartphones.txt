@@ -1,0 +1,4 @@
+samsung            |165      4500                     amoled    |48                   
+xioami             |170      4500                     oled      |50                   
+realme             |168      5000                     amoled    |50                   
+sony               |180      5200                     ips       |16                   

@@ -1,0 +1,2 @@
+apple              |3000     office             |apple imouse       |apple ikeyboard    |
+lg                 |4500     home               |logitech m1        |logitech kb1       |

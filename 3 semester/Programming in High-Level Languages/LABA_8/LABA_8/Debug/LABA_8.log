@@ -1,0 +1,35 @@
+﻿  BinaryTree.cpp
+  BinFile.cpp
+  CountingMachine.cpp
+  Exception.cpp
+  File.cpp
+  Functions.cpp
+  Interface.cpp
+  main.cpp
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(601,15): warning C4101: foundedNode: неиспользованная локальная переменная
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(599): message : во время компиляции функции-члена класс шаблон "void Interface<Monoblock>::edit_element(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(226): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<Monoblock>::edit_element(BinaryTree<T> &)"
+          with
+          [
+              T=Monoblock
+          ]
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(420): message : во время компиляции функции-члена класс шаблон "Interface<Monoblock>::Interface(void)"
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(36): message : выполняется компиляция ссылки на экземпляр шаблон функции "Interface<Monoblock>::Interface(void)"
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(12): message : во время компиляции функции-члена класс шаблон "void Interface<char>::mainMenu(void)"
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\main.cpp(29): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Interface<char>::mainMenu(void)"
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\main.cpp(28): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Interface<char>"
+  Monoblock.cpp
+  Notebook.cpp
+  PortableCM.cpp
+  Smartphone.cpp
+  StationaryCM.cpp
+  TxtFile.cpp
+  Создание кода...
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(416): warning C4715: generate_id<Monoblock>: значение возвращается не при всех путях выполнения
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(416): warning C4715: generate_id<Smartphone>: значение возвращается не при всех путях выполнения
+D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\LABA_8\Interface.cpp(416): warning C4715: generate_id<Notebook>: значение возвращается не при всех путях выполнения
+  LABA_8.vcxproj -> D:\Projects\3 semester\P_in_HLL projects\3 semester\LABA_8\Debug\LABA_8.exe
