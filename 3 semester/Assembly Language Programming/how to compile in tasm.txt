@@ -1,0 +1,7 @@
+Файл .asm находится в папке tasm.
+
+1. cd tasm
+2. tasm lab1.asm
+3. tlink lab1.obj
+
+Запускаем lab1.exe.
