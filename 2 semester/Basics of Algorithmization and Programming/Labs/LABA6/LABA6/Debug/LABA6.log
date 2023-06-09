@@ -1,0 +1,21 @@
+﻿  add.cpp
+  add_from_queue.cpp
+  auto_add.cpp
+  check_free_places.cpp
+  del.cpp
+  deleted_plus_queue.cpp
+  freeAll.cpp
+  main.cpp
+  move.cpp
+  myFunctions.cpp
+D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\LABA6\myFunctions.cpp(10,15): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\LABA6\myFunctions.cpp(10,15): message : заполнители и их параметры ожидают переменное число аргументов в количестве 3, но было предоставлено 2
+D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\LABA6\myFunctions.cpp(10,15): message : отсутствующий вариативный аргумент "3" требуется для строки форматирования "%c"
+D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\LABA6\myFunctions.cpp(10,15): message : этот аргумент используется в качестве размера буфера
+  output_deleted.cpp
+  search_person.cpp
+  set.cpp
+  show.cpp
+  Создание кода...
+D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\LABA6\add.cpp(134): warning C4715: fun_add: значение возвращается не при всех путях выполнения
+  LABA6.vcxproj -> D:\Projects\2 semester\Basics of Programming and Algorithmization\LABA6\Debug\LABA6.exe
