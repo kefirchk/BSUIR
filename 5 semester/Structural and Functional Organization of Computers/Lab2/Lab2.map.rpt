@@ -1,0 +1,695 @@
+Analysis & Synthesis report for Lab2
+Thu Sep 14 22:46:13 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Source assignments for Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component
+ 10. Source assignments for Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component
+ 11. Source assignments for Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component
+ 12. Source assignments for Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component
+ 13. Parameter Settings for User Entity Instance: Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component
+ 14. Parameter Settings for User Entity Instance: Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component
+ 15. Parameter Settings for User Entity Instance: Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component
+ 16. Parameter Settings for User Entity Instance: Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component
+ 17. Parameter Settings for User Entity Instance: Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component
+ 18. Parameter Settings for User Entity Instance: Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component
+ 19. Parameter Settings for User Entity Instance: Block1:inst2|lpm_compare0:inst17|lpm_compare:lpm_compare_component
+ 20. Parameter Settings for User Entity Instance: Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component
+ 21. Parameter Settings for User Entity Instance: Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                            ;
++-------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Thu Sep 14 22:46:13 2023   ;
+; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
+; Revision Name                 ; Lab2                                    ;
+; Top-level Entity Name         ; Block4                                  ;
+; Family                        ; Stratix II                              ;
+; Logic utilization             ; N/A                                     ;
+;     Combinational ALUTs       ; 36                                      ;
+;     Dedicated logic registers ; 16                                      ;
+; Total registers               ; 16                                      ;
+; Total pins                    ; 19                                      ;
+; Total virtual pins            ; 0                                       ;
+; Total block memory bits       ; 0                                       ;
+; DSP block 9-bit elements      ; 0                                       ;
+; Total PLLs                    ; 0                                       ;
+; Total DLLs                    ; 0                                       ;
++-------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Block4             ; Lab2               ;
+; Family name                                                                ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+; lpm_compare0.tdf                 ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_compare0.tdf                         ;
+; lpm_compare1.tdf                 ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_compare1.tdf                         ;
+; lpm_compare_block2_3.tdf         ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_compare_block2_3.tdf                 ;
+; lpm_compare_block2_6.tdf         ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_compare_block2_6.tdf                 ;
+; lpm_counter0.tdf                 ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_counter0.tdf                         ;
+; lpm_counter1.tdf                 ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_counter1.tdf                         ;
+; lpm_counter_block2_1.tdf         ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_counter_block2_1.tdf                 ;
+; lpm_counter_block2_2.tdf         ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_counter_block2_2.tdf                 ;
+; lpm_decode1.tdf                  ; yes             ; User Wizard-Generated File         ; D:/Projects/Quartus/Lab2/lpm_decode1.tdf                          ;
+; Block2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Projects/Quartus/Lab2/Block2.bdf                               ;
+; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Projects/Quartus/Lab2/Block1.bdf                               ;
+; Block3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Projects/Quartus/Lab2/Block3.bdf                               ;
+; Block4.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Projects/Quartus/Lab2/Block4.bdf                               ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_compare.inc ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_counter.inc ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_decode.inc  ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_compare.tdf ;
+; db/cmpr_h8j.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/cmpr_h8j.tdf                          ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf ;
+; db/cntr_uaj.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/cntr_uaj.tdf                          ;
+; db/cmpr_i8j.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/cmpr_i8j.tdf                          ;
+; db/cntr_vaj.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/cntr_vaj.tdf                          ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; d:/apps/altera/91/quartus/libraries/megafunctions/lpm_decode.tdf  ;
+; db/decode_e9f.tdf                ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/decode_e9f.tdf                        ;
+; db/cntr_qlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Projects/Quartus/Lab2/db/cntr_qlh.tdf                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                        ;
++-----------------------------------------------+----------------------------------------------------------------------------------------------------+
+; Resource                                      ; Usage                                                                                              ;
++-----------------------------------------------+----------------------------------------------------------------------------------------------------+
+; Estimated ALUTs Used                          ; 36                                                                                                 ;
+; Dedicated logic registers                     ; 16                                                                                                 ;
+;                                               ;                                                                                                    ;
+; Estimated ALUTs Unavailable                   ; 0                                                                                                  ;
+;                                               ;                                                                                                    ;
+; Total combinational functions                 ; 36                                                                                                 ;
+; Combinational ALUT usage by number of inputs  ;                                                                                                    ;
+;     -- 7 input functions                      ; 0                                                                                                  ;
+;     -- 6 input functions                      ; 0                                                                                                  ;
+;     -- 5 input functions                      ; 0                                                                                                  ;
+;     -- 4 input functions                      ; 18                                                                                                 ;
+;     -- <=3 input functions                    ; 18                                                                                                 ;
+;                                               ;                                                                                                    ;
+; Combinational ALUTs by mode                   ;                                                                                                    ;
+;     -- normal mode                            ; 22                                                                                                 ;
+;     -- extended LUT mode                      ; 0                                                                                                  ;
+;     -- arithmetic mode                        ; 14                                                                                                 ;
+;     -- shared arithmetic mode                 ; 0                                                                                                  ;
+;                                               ;                                                                                                    ;
+; Estimated ALUT/register pairs used            ; 37                                                                                                 ;
+;                                               ;                                                                                                    ;
+; Total registers                               ; 16                                                                                                 ;
+;     -- Dedicated logic registers              ; 16                                                                                                 ;
+;     -- I/O registers                          ; 0                                                                                                  ;
+;                                               ;                                                                                                    ;
+; Estimated ALMs:  partially or completely used ; 19                                                                                                 ;
+;                                               ;                                                                                                    ;
+; I/O pins                                      ; 19                                                                                                 ;
+; Maximum fan-out node                          ; Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated|safe_q[0] ;
+; Maximum fan-out                               ; 17                                                                                                 ;
+; Total fan-out                                 ; 172                                                                                                ;
+; Average fan-out                               ; 2.42                                                                                               ;
++-----------------------------------------------+----------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
++----------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+; |Block4                                      ; 36 (1)            ; 16 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 19   ; 0            ; |Block4                                                                                                   ; work         ;
+;    |Block1:inst2|                            ; 7 (2)             ; 5 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2                                                                                      ; work         ;
+;       |lpm_compare1:inst18|                  ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_compare1:inst18                                                                  ; work         ;
+;          |lpm_compare:lpm_compare_component| ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component                                ; work         ;
+;             |cmpr_i8j:auto_generated|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component|cmpr_i8j:auto_generated        ; work         ;
+;       |lpm_counter0:inst15|                  ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_counter0:inst15                                                                  ; work         ;
+;          |lpm_counter:lpm_counter_component| ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component                                ; work         ;
+;             |cntr_vaj:auto_generated|        ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component|cntr_vaj:auto_generated        ; work         ;
+;    |Block2:inst1|                            ; 8 (0)             ; 7 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1                                                                                      ;              ;
+;       |lpm_compare_block2_3:inst2|           ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_3:inst2                                                           ; work         ;
+;          |lpm_compare:lpm_compare_component| ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component                         ; work         ;
+;             |cmpr_h8j:auto_generated|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component|cmpr_h8j:auto_generated ; work         ;
+;       |lpm_compare_block2_6:inst3|           ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_6:inst3                                                           ; work         ;
+;          |lpm_compare:lpm_compare_component| ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component                         ; work         ;
+;             |cmpr_h8j:auto_generated|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component|cmpr_h8j:auto_generated ; work         ;
+;       |lpm_counter_block2_1:inst|            ; 3 (0)             ; 3 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_1:inst                                                            ; work         ;
+;          |lpm_counter:lpm_counter_component| ; 3 (0)             ; 3 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component                          ; work         ;
+;             |cntr_uaj:auto_generated|        ; 3 (3)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component|cntr_uaj:auto_generated  ; work         ;
+;       |lpm_counter_block2_2:inst1|           ; 3 (0)             ; 3 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_2:inst1                                                           ; work         ;
+;          |lpm_counter:lpm_counter_component| ; 3 (0)             ; 3 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component                         ; work         ;
+;             |cntr_uaj:auto_generated|        ; 3 (3)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component|cntr_uaj:auto_generated ; work         ;
+;    |Block3:inst|                             ; 20 (0)            ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst                                                                                       ; work         ;
+;       |lpm_counter1:inst1|                   ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_counter1:inst1                                                                    ; work         ;
+;          |lpm_counter:lpm_counter_component| ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component                                  ; work         ;
+;             |cntr_qlh:auto_generated|        ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated          ; work         ;
+;       |lpm_decode1:inst|                     ; 16 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_decode1:inst                                                                      ; work         ;
+;          |lpm_decode:lpm_decode_component|   ; 16 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component                                      ; work         ;
+;             |decode_e9f:auto_generated|      ; 16 (16)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Block4|Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated            ; work         ;
++----------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 16    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 10    ;
+; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Source assignments for Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+-------------------------------------------------------+
+; Assignment                ; Value ; From ; To                                                    ;
++---------------------------+-------+------+-------------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                                     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                                     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                                     ;
++---------------------------+-------+------+-------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Source assignments for Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+------------------------------------------------------+
+; Assignment                ; Value ; From ; To                                                   ;
++---------------------------+-------+------+------------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                                    ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                                    ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                                    ;
++---------------------------+-------+------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Source assignments for Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+------------------------------------------------+
+; Assignment                ; Value ; From ; To                                             ;
++---------------------------+-------+------+------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                              ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                              ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                              ;
++---------------------------+-------+------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Source assignments for Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+----------------------------------------------+
+; Assignment                ; Value ; From ; To                                           ;
++---------------------------+-------+------+----------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                            ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                            ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                            ;
++---------------------------+-------+------+----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component ;
++------------------------+------------+----------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                             ;
++------------------------+------------+----------------------------------------------------------------------------------+
+; lpm_width              ; 3          ; Untyped                                                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                          ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                          ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                          ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                          ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                               ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                             ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                          ;
+; CBXI_PARAMETER         ; cmpr_h8j   ; Untyped                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                   ;
++------------------------+------------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component ;
++------------------------+-------------+---------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                            ;
++------------------------+-------------+---------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                    ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                                  ;
+; LPM_WIDTH              ; 3           ; Untyped                                                                         ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                         ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                         ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                         ;
+; LPM_SVALUE             ; 1           ; Untyped                                                                         ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                         ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                         ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                         ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                              ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                              ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                         ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                         ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                         ;
+; CBXI_PARAMETER         ; cntr_uaj    ; Untyped                                                                         ;
++------------------------+-------------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component ;
++------------------------+------------+----------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                             ;
++------------------------+------------+----------------------------------------------------------------------------------+
+; lpm_width              ; 3          ; Untyped                                                                          ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                          ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                          ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                          ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                          ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                               ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                             ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                          ;
+; CBXI_PARAMETER         ; cmpr_h8j   ; Untyped                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                   ;
++------------------------+------------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block2:inst1|lpm_counter_block2_1:inst|lpm_counter:lpm_counter_component ;
++------------------------+-------------+--------------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                           ;
++------------------------+-------------+--------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                                 ;
+; LPM_WIDTH              ; 3           ; Untyped                                                                        ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                        ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                        ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                        ;
+; LPM_SVALUE             ; 1           ; Untyped                                                                        ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                        ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                        ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                        ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                             ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                             ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                        ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                        ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                        ;
+; CBXI_PARAMETER         ; cntr_uaj    ; Untyped                                                                        ;
++------------------------+-------------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component ;
++------------------------+------------+---------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                      ;
++------------------------+------------+---------------------------------------------------------------------------+
+; lpm_width              ; 4          ; Untyped                                                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                   ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                   ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                   ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                   ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                        ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                      ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                   ;
+; CBXI_PARAMETER         ; cmpr_i8j   ; Untyped                                                                   ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                            ;
++------------------------+------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component ;
++------------------------+-------------+--------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                     ;
++------------------------+-------------+--------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                             ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                           ;
+; LPM_WIDTH              ; 4           ; Untyped                                                                  ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                  ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                  ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                  ;
+; LPM_SVALUE             ; 1           ; Untyped                                                                  ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                  ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                  ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                  ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                       ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                       ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                  ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                  ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                  ;
+; CBXI_PARAMETER         ; cntr_vaj    ; Untyped                                                                  ;
++------------------------+-------------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block1:inst2|lpm_compare0:inst17|lpm_compare:lpm_compare_component ;
++------------------------+------------+---------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                      ;
++------------------------+------------+---------------------------------------------------------------------------+
+; lpm_width              ; 4          ; Untyped                                                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED   ; Untyped                                                                   ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                   ;
+; CHAIN_SIZE             ; 8          ; Untyped                                                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES        ; Untyped                                                                   ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                   ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                        ;
+; CASCADE_CHAIN_LENGTH   ; 2          ; CASCADE_CHAIN_LENGTH                                                      ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                   ;
+; CBXI_PARAMETER         ; cmpr_i8j   ; Untyped                                                                   ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                            ;
++------------------------+------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component ;
++------------------------+------------+---------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                ;
++------------------------+------------+---------------------------------------------------------------------+
+; LPM_WIDTH              ; 4          ; Untyped                                                             ;
+; LPM_DECODES            ; 16         ; Untyped                                                             ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                             ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                             ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                             ;
+; CBXI_PARAMETER         ; decode_e9f ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                      ;
++------------------------+------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component ;
++------------------------+-------------+------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                   ;
++------------------------+-------------+------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                         ;
+; LPM_WIDTH              ; 4           ; Untyped                                                                ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                ;
+; DEVICE_FAMILY          ; Stratix II  ; Untyped                                                                ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                     ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                     ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                ;
+; CBXI_PARAMETER         ; cntr_qlh    ; Untyped                                                                ;
++------------------------+-------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Sep 14 22:46:11 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
+Info: Found 1 design units, including 1 entities, in source file lpm_compare0.tdf
+    Info: Found entity 1: lpm_compare0
+Info: Found 1 design units, including 1 entities, in source file lpm_compare1.tdf
+    Info: Found entity 1: lpm_compare1
+Info: Found 1 design units, including 1 entities, in source file lpm_compare_block2_3.tdf
+    Info: Found entity 1: lpm_compare_block2_3
+Info: Found 1 design units, including 1 entities, in source file lpm_compare_block2_6.tdf
+    Info: Found entity 1: lpm_compare_block2_6
+Info: Found 1 design units, including 1 entities, in source file lpm_counter0.tdf
+    Info: Found entity 1: lpm_counter0
+Info: Found 1 design units, including 1 entities, in source file lpm_counter1.tdf
+    Info: Found entity 1: lpm_counter1
+Info: Found 1 design units, including 1 entities, in source file lpm_counter_block2_1.tdf
+    Info: Found entity 1: lpm_counter_block2_1
+Info: Found 1 design units, including 1 entities, in source file lpm_counter_block2_2.tdf
+    Info: Found entity 1: lpm_counter_block2_2
+Info: Found 1 design units, including 1 entities, in source file lpm_decode0.tdf
+    Info: Found entity 1: lpm_decode0
+Info: Found 1 design units, including 1 entities, in source file lpm_decode1.tdf
+    Info: Found entity 1: lpm_decode1
+Info: Found 1 design units, including 1 entities, in source file block2.bdf
+    Info: Found entity 1: Block2
+Info: Found 1 design units, including 1 entities, in source file block1.bdf
+    Info: Found entity 1: Block1
+Info: Found 1 design units, including 1 entities, in source file block3.bdf
+    Info: Found entity 1: Block3
+Info: Found 1 design units, including 1 entities, in source file block1_principal.bdf
+    Info: Found entity 1: Block1_principal
+Info: Found 1 design units, including 1 entities, in source file block1_functional.bdf
+    Info: Found entity 1: Block1_functional
+Info: Found 1 design units, including 1 entities, in source file block4.bdf
+    Info: Found entity 1: Block4
+Info: Elaborating entity "Block4" for the top level hierarchy
+Info: Elaborating entity "Block2" for hierarchy "Block2:inst1"
+Info: Elaborating entity "lpm_compare_block2_6" for hierarchy "Block2:inst1|lpm_compare_block2_6:inst3"
+Info: Elaborating entity "lpm_compare" for hierarchy "Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COMPARE"
+    Info: Parameter "LPM_HINT" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "LPM_WIDTH" = "3"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_h8j.tdf
+    Info: Found entity 1: cmpr_h8j
+Info: Elaborating entity "cmpr_h8j" for hierarchy "Block2:inst1|lpm_compare_block2_6:inst3|lpm_compare:lpm_compare_component|cmpr_h8j:auto_generated"
+Info: Elaborating entity "lpm_counter_block2_2" for hierarchy "Block2:inst1|lpm_counter_block2_2:inst1"
+Info: Elaborating entity "lpm_counter" for hierarchy "Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+    Info: Parameter "LPM_WIDTH" = "3"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_SVALUE" = "1"
+    Info: Parameter "LPM_PORT_UPDOWN" = "PORT_UNUSED"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_uaj.tdf
+    Info: Found entity 1: cntr_uaj
+Info: Elaborating entity "cntr_uaj" for hierarchy "Block2:inst1|lpm_counter_block2_2:inst1|lpm_counter:lpm_counter_component|cntr_uaj:auto_generated"
+Info: Elaborating entity "lpm_compare_block2_3" for hierarchy "Block2:inst1|lpm_compare_block2_3:inst2"
+Info: Elaborating entity "lpm_compare" for hierarchy "Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "Block2:inst1|lpm_compare_block2_3:inst2|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COMPARE"
+    Info: Parameter "LPM_HINT" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "LPM_WIDTH" = "3"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+Info: Elaborating entity "lpm_counter_block2_1" for hierarchy "Block2:inst1|lpm_counter_block2_1:inst"
+Info: Elaborating entity "Block1" for hierarchy "Block1:inst2"
+Info: Elaborating entity "lpm_compare1" for hierarchy "Block1:inst2|lpm_compare1:inst18"
+Info: Elaborating entity "lpm_compare" for hierarchy "Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COMPARE"
+    Info: Parameter "LPM_HINT" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_i8j.tdf
+    Info: Found entity 1: cmpr_i8j
+Info: Elaborating entity "cmpr_i8j" for hierarchy "Block1:inst2|lpm_compare1:inst18|lpm_compare:lpm_compare_component|cmpr_i8j:auto_generated"
+Info: Elaborating entity "lpm_counter0" for hierarchy "Block1:inst2|lpm_counter0:inst15"
+Info: Elaborating entity "lpm_counter" for hierarchy "Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_SVALUE" = "1"
+    Info: Parameter "LPM_PORT_UPDOWN" = "PORT_UNUSED"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_vaj.tdf
+    Info: Found entity 1: cntr_vaj
+Info: Elaborating entity "cntr_vaj" for hierarchy "Block1:inst2|lpm_counter0:inst15|lpm_counter:lpm_counter_component|cntr_vaj:auto_generated"
+Info: Elaborating entity "lpm_compare0" for hierarchy "Block1:inst2|lpm_compare0:inst17"
+Info: Elaborating entity "lpm_compare" for hierarchy "Block1:inst2|lpm_compare0:inst17|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "Block1:inst2|lpm_compare0:inst17|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "Block1:inst2|lpm_compare0:inst17|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COMPARE"
+    Info: Parameter "LPM_HINT" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+Info: Elaborating entity "Block3" for hierarchy "Block3:inst"
+Info: Elaborating entity "lpm_decode1" for hierarchy "Block3:inst|lpm_decode1:inst"
+Info: Elaborating entity "lpm_decode" for hierarchy "Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component"
+Info: Elaborated megafunction instantiation "Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component"
+Info: Instantiated megafunction "Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_DECODE"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DECODES" = "16"
+Info: Found 1 design units, including 1 entities, in source file db/decode_e9f.tdf
+    Info: Found entity 1: decode_e9f
+Info: Elaborating entity "decode_e9f" for hierarchy "Block3:inst|lpm_decode1:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated"
+Info: Elaborating entity "lpm_counter1" for hierarchy "Block3:inst|lpm_counter1:inst1"
+Info: Elaborating entity "lpm_counter" for hierarchy "Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_PORT_UPDOWN" = "PORT_UNUSED"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_qlh.tdf
+    Info: Found entity 1: cntr_qlh
+Info: Elaborating entity "cntr_qlh" for hierarchy "Block3:inst|lpm_counter1:inst1|lpm_counter:lpm_counter_component|cntr_qlh:auto_generated"
+Info: Implemented 56 device resources after synthesis - the final resource count might be different
+    Info: Implemented 1 input pins
+    Info: Implemented 18 output pins
+    Info: Implemented 37 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 227 megabytes
+    Info: Processing ended: Thu Sep 14 22:46:13 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
