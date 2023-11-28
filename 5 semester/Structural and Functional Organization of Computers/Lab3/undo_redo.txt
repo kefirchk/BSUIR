@@ -1,0 +1,44 @@
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Move
+	     3.	Move
+	     4.	Move
+	     5.	Move
+	     6.	Move
+	     7.	Move
+	     8.	Properties
+	     9.	Paste
+	    10.	Properties
+	    11.	Insert Symbol
+	    12.	Properties
+	    13.	Insert Symbol
+	    14.	Properties
+	    15.	Move
+	    16.	Insert Symbol
+	    17.	Insert Symbol
+
+
+WED
+
+	Undo Commands
+	     1.	Delete Node, Bus or Waveform Divider
+	     2.	Edit Waveform
+	     3.	Edit Waveform
+	     4.	Edit Waveform
+	     5.	Edit Waveform
+	     6.	Arbitrary Value
+			 *** 
+	     7.	Delete Waveform Interval
+			 *** 
+	     8.	Clock
+	     9.	Edit Waveform
+
+
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+
+
