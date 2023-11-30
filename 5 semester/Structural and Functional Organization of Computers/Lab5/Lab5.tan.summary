@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.021 ns
+From           : control_block:inst16|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_vaj:auto_generated|safe_q[2]
+To             : DATA_BUS[2]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 87.40 MHz ( period = 11.442 ns )
+From           : control_block:inst16|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_vaj:auto_generated|safe_q[2]
+To             : register_block:inst2|lpm_dff4:inst21|lpm_ff:lpm_ff_component|dffs[2]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : ALU_block:inst7|lpm_dff4:inst12|lpm_ff:lpm_ff_component|dffs[0]
+To             : ALU_block:inst7|lpm_dff8:inst1|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 9
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 9
+
+--------------------------------------------------------------------------------------
+
