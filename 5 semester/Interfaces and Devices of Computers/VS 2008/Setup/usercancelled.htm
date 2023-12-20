@@ -1,0 +1,94 @@
+﻿<html id="usercancelled.htm_0">
+<head id="usercancelled.htm_8">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8" id="usercancelled.htm_16">
+<title id="usercancelled.htm_83">Setup Cancelled</title>
+</head>
+<BODY vLink=purple link=blue bgColor=white id="usercancelled.htm_124">
+<BASEFONT face="Verdana" color="navy" size="2" id="usercancelled.htm_169">
+
+<script language="JScript" id="usercancelled.htm_220">
+	var strInput;
+	var strRemainingInput;
+	var strPath;
+	var strErrors;
+	var strRollback;
+	var strReadmePath;
+	var i;
+	var strErrorAnchor;
+	var strInstallAnchor;
+	var strWowFlag;
+	var strLogName;
+	var strErrLogName;
+
+	strInput=window.location.search.substring(1,window.location.search.length);
+
+	i=strInput.indexOf(";");
+	strErrors=strInput.substring(0,i);
+	strRemainingInput=strInput.substring(i+1,strInput.length);
+	i=strErrors.indexOf("=");
+	strErrors=strErrors.substring(i+1,i+2);
+
+	i=strRemainingInput.indexOf(";");
+	strLogName=strRemainingInput.substring(0,i);
+	strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+	i=strLogName.indexOf("=");
+	strLogName=strLogName.substring(i+1,strLogName.length);
+
+	i=strRemainingInput.indexOf(";");
+	strErrLogName=strRemainingInput.substring(0,i);
+	strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+	i=strErrLogName.indexOf("=");
+	strErrLogName=strErrLogName.substring(i+1,strErrLogName.length);
+
+	i=strRemainingInput.indexOf(";");
+	strPath=strRemainingInput.substring(0,i);
+	strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+	i=strPath.indexOf("=");
+	strPath=strPath.substring(i+1,strPath.length);
+
+	i=strRemainingInput.indexOf("=");
+	strRollback=strRemainingInput.substring(i+1,i+2);
+	strRemainingInput=strRemainingInput.substring(i+3,strInput.length);
+
+	i=strRemainingInput.indexOf(";");
+	strReadmePath=strRemainingInput.substring(0,i);
+	strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+	i=strReadmePath.indexOf("=");
+	strReadmePath=strReadmePath.substring(i+1,strReadmePath.length);
+
+	i=strRemainingInput.indexOf("=");
+	strWowFlag=strRemainingInput.substring(i+1,i+2);
+
+	// Security precaution
+	forbiddenChars = new RegExp("[<>\'\"]", "g");	// Global search/replace
+	strPath = strPath.replace(forbiddenChars, "");
+	strReadmePath = strReadmePath.replace(forbiddenChars, "");
+
+	document.write("<table width=\"100%\">");
+	//document.write("<tr><td width=36><img src=\"smallFail.gif\"></td>");
+	document.write("<tr><td width=36><img src=\"file:///"+strReadmePath+"/smallFail.gif\"></td>");
+	document.write("<td><font size=4 color=\"red\"><b>Setup has been cancelled.</b></font></td>");
+	document.write("</tr>");
+	document.write("</table>");
+	document.write("<img src=\"file:///"+strReadmePath+"/redrule.gif\" width=\"100%\" height=4><br><br>");
+
+	document.write ("Components that finished installing before setup was cancelled will not be uninstalled. To uninstall these components, use <b>Add or Remove Programs</b> in the Control Panel.<br><br>");
+
+	if (strErrors=="1")
+	{
+		document.write ("<a target='_blank' href='file:///" + strPath + 	"/" + strErrLogName +"'>View the error log</a><br><br>");
+	}
+
+	document.write ("<a target='_blank' href='file:///" + strPath + "/" + strLogName +"'>View the setup log</a><br>");
+	document.write ("<a target='_blank' href='file:///" + strReadmePath + "/readme.htm'>Review the readme file</a><br>");
+</SCRIPT>
+<noscript id="usercancelled.htm_2744">
+<table width="100%" id="usercancelled.htm_2756">
+<tr id="usercancelled.htm_2778"><td width=36 id="usercancelled.htm_2782"><img src="smallFail.gif" id="usercancelled.htm_2795"></td>
+	<td id="usercancelled.htm_2828"><font size=4 color="red" id="usercancelled.htm_2832"><b id="usercancelled.htm_2857">Setup has been cancelled.</b></font></td>
+</tr>
+</table>
+<img src="redrule.gif" width="100%" height=4 id="usercancelled.htm_2920"><br id="usercancelled.htm_2965"><br id="usercancelled.htm_2969">
+</noscript>
+</body>
+</html>

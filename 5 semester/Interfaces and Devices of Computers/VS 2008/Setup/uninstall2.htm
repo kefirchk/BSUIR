@@ -1,0 +1,129 @@
+﻿<html>
+  <head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <title>Uninstall is in progress</title>
+  </head>
+
+  <BODY vLink=purple link=blue bgColor=white>
+  <BASEFONT face="Verdana" color="navy" size="2">
+
+   <script language=javascript>
+   <!--
+
+    var strInput;
+    var strRemainingInput;
+    var strPath;
+    var strErrors;
+    var strRollback;
+    var strReadmePath;
+    var i;
+    var strErrorAnchor;
+    var strInstallAnchor;
+    var strWowFlag;
+    var optErrorFlag;
+    var depCheckFlag;
+    var strLogName;
+    var strErrLogName;
+
+    strInput=window.location.search.substring(1,window.location.search.length);
+
+    i=strInput.indexOf(";");
+    strErrors=strInput.substring(0,i);
+    strRemainingInput=strInput.substring(i+1,strInput.length);
+    i=strErrors.indexOf("=");
+    strErrors=strErrors.substring(i+1,i+2);
+
+    i=strRemainingInput.indexOf(";");
+    strLogName=strRemainingInput.substring(0,i);
+    strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+    i=strLogName.indexOf("=");
+    strLogName=strLogName.substring(i+1,strLogName.length);
+
+    i=strRemainingInput.indexOf(";");
+    strErrLogName=strRemainingInput.substring(0,i);
+    strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+    i=strErrLogName.indexOf("=");
+    strErrLogName=strErrLogName.substring(i+1,strErrLogName.length);
+
+    i=strRemainingInput.indexOf(";");
+    strPath=strRemainingInput.substring(0,i);
+    strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+    i=strPath.indexOf("=");
+    strPath=strPath.substring(i+1,strPath.length);
+
+    i=strRemainingInput.indexOf("=");
+    strRollback=strRemainingInput.substring(i+1,i+2);
+    strRemainingInput=strRemainingInput.substring(i+3,strInput.length);
+
+    i=strRemainingInput.indexOf(";");
+    strReadmePath=strRemainingInput.substring(0,i);
+    strRemainingInput=strRemainingInput.substring(i+1,strInput.length);
+    i=strReadmePath.indexOf("=");
+    strReadmePath=strReadmePath.substring(i+1,strReadmePath.length);
+
+    i=strRemainingInput.indexOf("=");
+    strWowFlag=strRemainingInput.substring(i+1,i+2);
+    strRemainingInput=strRemainingInput.substring(i+3,strInput.length);
+
+    // Look at remaining input and try to find OptError and Depcheck
+    var optErrorString = "opterror=";
+    var depCheckString = "depcheck=";
+
+    strRemainingInput = strRemainingInput.toLowerCase();
+
+    var optError = strRemainingInput.toLowerCase().match(optErrorString);
+    if (optError)
+    {
+        i=strRemainingInput.indexOf(optErrorString)+(optErrorString.length)-1;
+        optErrorFlag=strRemainingInput.substring(i+1,i+2);
+    }
+
+    var depcheck = strRemainingInput.toLowerCase().match(depCheckString);
+    if (depcheck)
+    {
+        i=strRemainingInput.indexOf("depcheck=")+(depCheckString.length)-1;
+        depCheckFlag = strRemainingInput.substring(i+1,i+2);
+    }
+
+
+    //Get rid of space esc (%20)
+    spaces = new RegExp("\%20", "g");
+    strPath = strPath.replace(spaces , " ");
+    strReadmePath = strReadmePath.replace(spaces , " ");
+
+    // Security precaution
+    forbiddenChars = new RegExp("[<>\'\"]", "g");   // Global search/replace
+    strPath = strPath.replace(forbiddenChars, "");
+    strReadmePath = strReadmePath.replace(forbiddenChars, "");
+
+
+     document.write("<table width=100%>");
+     document.write("<tr>");
+     document.write("   <td width=36><img src=\"file:///"+strReadmePath+"//smallSuccess.gif\">");
+     document.write("   </td>");
+     document.write("   <td valign=\"top\"><font size=4 color=\"green\"><b>Uninstall is complete.</b></font>");
+     document.write("</td></tr>");
+     document.write("</table>");
+     document.write("<img src=\"file:///"+strReadmePath+"/greenrule.gif\" width=\"100%\" height=4><br><br>");
+  
+     document.write("Visual Studio uninstall has completed successfully.  ");
+
+    -->
+   </script>
+   <noscript>
+  <table width="100%">
+    <tr>
+      <td width=36><img src="smallSuccess.gif">
+      </td>
+      <td valign="top"><font size=4 color="green"><b>Uninstall is complete.</b></font>
+      </td>
+    </tr>
+  </table>
+  <img src="greenrule.gif" width="100%" height=4><br><br>
+
+
+  <p><b>Visual Studio uninstall has completed successfully</b></p>
+
+</body>
+
+</html>

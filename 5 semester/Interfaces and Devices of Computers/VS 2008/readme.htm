@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<TITLE>Visual Studio 2008 Readme</TITLE><style type="text/css"> UL.toc, OL.toc { list-style: none; font-family: arial } UL, OL { font-family: arial } LI.tocline1 { font-weight: bold; font-family: arial } LI.tocline2 { font-weight: normal; font-family: arial; text-indent: 2em; }LI.tocline3 { font-weight: normal; font-family: arial; text-indent: 4em; }P { font-size: 0.8em; font-family: arial }H1, H2, H3, H4, span { font-family: arial }</style></HEAD>
+<BODY>
+<H1>
+Visual Studio 2008 Readme
+</H1>
+<P>To view the most up-to-date version of the Visual Studio 2008 Readme, click <a href= " http://go.microsoft.com/fwlink/?LinkId=102508">here</a>.</P>
+    <p>
+        <strong><span style="font-size: 16pt">Table of Contents</span></strong></p>
+<H2>
+<A name="TOC"></A>
+</H2>
+<ul class="toc">
+<li class="tocline1">1. <A href="#System Requirements">System Requirements</A></li>
+<li class="tocline2">1.1. <A href="#Supported Architectures">Supported Architectures</A></li>
+<li class="tocline2">1.2. <A href="#Supported Operating Systems">Supported Operating Systems</A>
+</li>
+<li class="tocline2">1.3. <A href="#Hardware Requirements">Hardware Requirements</A></li>
+<li class="tocline1">2. <A href="#Known Issues">Known Issues</A></li>
+<li class="tocline2">2.1. <A href="#Installing">Installing</A></li>
+<li class="tocline2">2.2. <A href="#Uninstalling">Uninstalling</A></li>
+<li class="tocline3">2.2.1. <A href="#On machines with previous versions of Visual Studio">On computers that have earlier versions of Visual Studio</A></li>
+<li class="tocline3">2.2.2. <A href="#On machines with no previous versions of Visual Studio">On computers that do not have earlier versions of Visual Studio</A></li>
+<li class="tocline2">2.3. <A href="#Product Issues">Product Issues</A></li>
+<li class="tocline3">2.3.1. <A href="#General Issues">General Issues</A></li>
+<li class="tocline3">2.3.2. <A href="#ADO.Net">ADO.NET</A></li>
+<li class="tocline3">2.3.3. <A href="#Languages">Languages</A></li>
+<li class="tocline3">2.3.4. <A href="#LINQ">LINQ</A></li>
+<li class="tocline3">2.3.5. <A href="#Visual Studio Tools for Office">Visual Studio Tools for Office</A></li>
+<li class="tocline3">2.3.6. <A href="#Web Development">Web Development</A></li>
+<li class="tocline3">2.3.7. <A href="#Windows Communication Foundation (WCF) Tools">Windows Communication Foundation (WCF) Tools</A></li>
+<li class="tocline3">2.3.8. <A href="#Windows Presentation Foundation (WPF) Designer for Visual Studio">Windows Presentation Foundation (WPF) Designer for Visual Studio</A></li>
+<li class="tocline3">2.3.9. <A href="#Windows Workflow Foundation (WF) Tools">Windows Workflow Foundation (WF) Tools</A></li>
+<li class="tocline3">2.3.10. <A href="#Windows SDK Integration">Windows SDK Integration</A></li>
+<li class="tocline1">3. <A href="#Related Links">Related Links</A></li>
+<li class="tocline2"></li>
+</UL>
+<H2>
+1. <A name="System Requirements">System Requirements</A>
+</H2>
+<P>
+<B>1.1.
+<A name="Supported Architectures">Supported Architectures</A>
+
+</B>
+</P>
+<li><span style="font-family: Arial; font-size: 0.8em;">
+    x86
+</span></li>
+    <li><span style="font-family: Arial; font-size: 0.8em;">x64 (WOW) </span></li>
+    
+<P>
+<B>1.2.
+<A name="Supported Operating Systems">Supported Operating Systems</A>
+
+</B>
+</P>
+  
+  <li><span style="font-family: Arial; font-size: 0.8em;">Microsoft Windows XP </span></li>
+    <li><span style="font-family: Arial"></span><span style="font-family: Arial; font-size: 0.8em;">Microsoft Windows Server 2003 </span>
+    </li>
+    <li><span style="font-size: 0.8em"><span style="font-family: Arial">Windows Vista</span>
+    </span>
+    <P>
+<B>1.3.
+<A name="Hardware Requirements">Hardware Requirements</A>
+
+</B>
+</P>
+
+    </li>
+
+    <li><span style="font-size: 0.8em"><span style="font-family: Arial"><span>Minimum: 1.6 GHz CPU, 384 MB RAM, 1024x768 display, 5400 RPM hard disk</span>
+    </span></span></li>
+    <li><span style="font-size: 0.8em"><span style="font-family: Arial"><span>Recommended: 2.2 GHz or higher CPU, 1024 MB or
+        more RAM, 1280x1024 display, 7200 RPM or higher hard disk&nbsp;</span> </span></span>
+    </li>
+    <li><span style="font-family: Arial; font-size: 0.8em;">On Windows Vista: 2.4 GHz CPU, 768 MB RAM
+    </span></li>
+    
+    
+<H2>
+2. <a name="Known Issues">Known Issues</a></H2>
+    <h3>
+2.1. <a name="Installing">Installing</a>
+    </h3>
+    <h4>
+2.1.1.  Visual Studio SharePoint workflow features have specific installation requirements.
+    </h4>
+    <p>
+    </p>
+    <p>
+        To use the SharePoint workflow development tools in Visual Studio Tools for Office,&nbsp;complete the following installation steps in the specified order.</p>
+    <p>
+        1. Install Windows Server 2003.</p>
+    <p>
+        2. Install Internet Information Services (IIS). In Control Panel, select Add/Remove Windows components, then Application Server, then Details, then Internet Information Services (IIS).</p>
+    <p>
+        3. Install .NET Framework 2.0 and .NET Framework 3.0.</p>
+    <p>
+        4. In IIS Manager, enable ASP.NET 2.0.5727.</p>
+    <p>
+        5. Install Microsoft Office SharePoint Server 2007. Make sure to run the configuration wizard.</p>
+    <p>
+        6. Install Visual Studio 2008. Use the default installation or make sure that Visual Studio Tools for Office is selected on the Custom installation page of the Setup wizard.</p>
+    <p>
+        7. (Optional) SMTP Service. Installing this service lets you use SharePoint email-enabled features. Consult the SharePoint product documentation to learn more about these capabilities.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        No workaround is available.</p>
+    <p>
+    </p>
+    <h4>
+2.1.2.  Upgrading to the release version of SQL Server Compact 3.5 from SQL Server Compact 3.5 CTP or SQL Server Compact 3.5 Beta is not supported.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Upgrading from the CTP and Beta versions of SQL Server Compact 3.5 to the release version is not supported.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Before you install the release version of either SQL Server Compact 3.5 or Visual Studio 2008, uninstall all CTP and Beta versions of SQL Server Compact 3.5, SQL Server Compact 3.5 for Devices, and SQL Server Compact 3.5 Design Tools</p>
+    <p>
+    </p>
+    <h4>
+2.1.3.  Users get the error message, "A problem has been encountered while loading the setup components. Canceling setup".
+    </h4>
+    <p>
+Users get the error message, "A problem has been encountered while loading the setup components. Canceling setup" and then Setup is cancelled. This only occurs on systems that do not have Windows Installer 3.1. Users should install Windows Installer 3.1 and then retry Setup.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        1. In Add or Remove Programs, look for Windows Installer 3.1 in the list of installed programs.</p>
+    <p>
+        2. If Windows Installer 3.1 is not present, complete the following steps.</p>
+    <p>
+        &nbsp;&nbsp;a. Go to <a href="http://go.microsoft.com/fwlink/?LinkId=95263">Windows Installer 3.1 Redistributable (v2)</a> and then install Windows Installer 3.1.</p>
+    <p>
+        &nbsp;&nbsp;b. Retry Visual Studio 2008 Setup.</p>
+    <p>
+    </p>
+    <h4>
+2.1.4.  Setup stops and displays an error message, "Setup failed to stop Windows Installer service. You must stop all other applications running Windows Installer service or restart your computer before the installation".
+    </h4>
+    <p>
+        Setup stops and displays an error message, "Setup failed to stop Windows Installer service. You must stop all other applications running Windows Installer service or restart your computer before the installation".
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Try the following options:
+    </p>
+    <p>
+        - This message indicates that a setup program other than Visual Studio 2008 Setup might already be running on the computer. After the other setup is finished, restart the computer and then run Visual Studio 2008 Setup. 
+    </p>
+    <p>
+        - This message might also indicate that Windows updates are being installed on the computer. After Windows Update is finished, restart the computer and then run Visual Studio 2008 Setup. 
+    </p>
+    <p>
+        - Look for msiexec.exe in Task Manager. If msiexec.exe is already running, wait for it to finish and then restart the computer and run Visual Studio 2008 Setup. 
+    </p>
+    <p>
+        - If none of these options apply to your problem, restart your computer and then run Visual Studio 2008 Setup. 
+    </p>
+    <p>
+    </p>
+    <h4>
+2.1.5.  Installing Visual Studio 2008 on a computer that has Visual Studio 2005 causes Visual Studio 2005 repair of .NET Framework 2.0 to fail.
+    </h4>
+    <p>
+When Visual Studio 2008 is installed on the same computer as Visual Studio 2005, Visual Studio 2005 repair fails to repair the .NET Framework 2.0.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Repair .NET Framework 2.0 separately by using Add or Remove Programs. 
+    </p>
+    <h4>
+2.1.6.  Visual Studio 2008 Setup may display a message that prompts you to close running applications.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Visual Studio 2008 Setup may display a message that prompts you to close running
+        applications. In the message, some of the applications may have a numeric process identifier and some
+        may have an empty identifier. Names of applications are not shown.
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        We recommend that you close the applications so that they do not affect the installation
+        process.</p>
+    <p>
+        You can find the names of the applications by looking up their Process
+        IDs in Task Manager.</p>
+    <p>
+        1. Press CTRL+ALT+DEL and then click Task Manager.</p>
+    <p>
+        2. On the View menu, click Select Columns.</p>
+    <p>
+        3. Select PID (Process Identifier) and then click OK.</p>
+    <p>
+        4. In Task Manager, click PID to sort entries by PID.</p>
+    <p>
+        5. Look for the Process IDs that are shown in the message.</p>
+    <p>
+        You may also click Ignore in the message box and then continue with the installation. Doing this may require a reboot at the end of Setup.</p>
+    <p>
+    </p>
+    <h3>
+        2.2 <a name="Uninstalling">Uninstalling</a>
+    </h3>
+    <h4>
+2.2.1. <a name="On machines with previous versions of Visual Studio">On computers that have earlier versions of Visual Studio</a>
+    </h4>
+    <h4>
+2.2.1.1.  Uninstalling the Windows SDK can affect Visual Studio 2008.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If you install either the Windows SDK for Windows Vista or the Windows SDK Update for Windows Vista together with Visual Studio 2008, and then uninstall the Windows SDK, the registry keys that Visual Studio requires to find Windows headers, libraries, and tools are removed. 
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Do one of the following things: 
+    </p>
+    <p>
+        - Repair Visual Studio 2008 by using Add or Remove Programs (Windows Server 2003 and Windows XP) or by using Programs and Features (Windows Vista and Windows Server 2008). 
+    </p>
+    <p>
+        - Install the Windows SDK for Windows Server 2008 and
+        .NET Framework 3.5.</p>
+    <p>
+    </p>
+    <h4>
+2.2.1.2.  Uninstalling Visual Studio 2005 clears the registry entries that are required by the Load Agent.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If you install <a name="Agent">Visual Studio 2008 Team Test Load Agent</a> on a computer that has Visual Studio 2005 Team System Edition for Testers or Visual Studio 2005 Team Suite Edition, and then uninstall Visual Studio 2005, the uninstallation will clear the following registry entries that are required for load generation.</p>
+    <p>
+        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]</p>
+    <p>
+        "MaxUserPort"=dword:0000FFFE</p>
+    <p>
+        "TcpTimedWaitDelay"=dword:0000001e</p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        After you uninstall Visual Studio 2005, put these entries back in the registry.</p>
+    <p>
+    </p>
+    <h4>
+2.2.2. <a name="On machines with no previous versions of Visual Studio">On computers that do not have earlier versions of Visual Studio</a>
+    </h4>
+    <h4>
+2.2.2.1.  After one version of Visual Studio is uninstalled in a side-by-side configuration, Workflow debugging is no longer available.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If two versions of Visual Studio 2008 are installed on a computer (for example, the English and Japanese versions) and then one is uninstalled, you can no longer debug workflows in the remaining version. WDE.dll, which is part of the Workflow debugger, is uninstalled when either one of the installations is removed from the computer.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+In Visual Studio 2008 Setup, repair or reinstall the remaining Visual Studio version.
+    </p>
+    <h4>
+2.2.2.2.  Visual Studio 2008 Setup may display a message that prompts you to close running applications.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Visual Studio 2008 Setup may display a message that prompts you to close running
+        applications. In the message, some of the applications may have a numeric process identifier and some
+        may have an empty identifier. Names of applications are not shown.
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        We recommend that you close the applications so that they do not affect the installation
+        process.</p>
+    <p>
+        You can find the names of the applications by looking up their Process
+        IDs in Task Manager.</p>
+    <p>
+        1. Press CTRL+ALT+DEL and then click Task Manager.</p>
+    <p>
+        2. On the View menu, click Select Columns.</p>
+    <p>
+        3. Select PID (Process Identifier) and then click OK.</p>
+    <p>
+        4. In Task Manager, click PID to sort entries by PID.</p>
+    <p>
+        5. Look for the Process IDs that are shown in the message.</p>
+    <p>
+        You may also click Ignore in the message box and then continue with the installation. Doing this may require a reboot at the end of Setup.</p>
+ 
+    <p>
+    </p>
+    <h3>
+2.3. <a name="Product Issues">Product Issues</a>
+    </h3>
+    <h4>
+2.3.1. <a name="General Issues">General Issues</a>
+    </h4>
+    <h4>
+2.3.1.1.  Running a custom installation of the Windows SDK may change file link paths to point to non-existent files.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Running a custom installation of the Windows SDK may change file link paths to point to non-existent files. If Visual Studio 2008 is installed and then the Windows SDK is installed, an important registry key is changed. That key points to the SDK tools as well as the Windows headers and libraries. However, if you run a custom installation of the Windows SDK that does not include tools or headers and libraries, the link to those files is broken and some Visual Studio functionality will be broken.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Either repair Visual Studio 2008 or use the Windows SDK Configuration Tool, which is installed with the Windows SDK for Windows Server 2008 and .NET Framework 3.5.</p>
+    <p>
+    </p>
+    <h4>
+2.3.1.2.  Windows Workflow debugging with T-SQL is not supported.
+    </h4>
+    <p>
+If you debug your workflow with both the workflow debugging and T-SQL debugging enabled, unexpected results could occur.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        No workaround is available.</p>
+    <p>
+    </p>
+    <h4>
+2.3.1.3.  Locals window does not work on the 64-bit version of Windows Vista.
+    </h4>
+    <p>
+The Locals window is not visible when Visual Studio is running on the 64-bit version of Windows Vista.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        No workaround is available.</p>
+    <p>
+    </p>
+    <h4>
+2.3.1.4.  Adding a new database unit test to a workflow project displays an error.
+    </h4>
+    <p>
+        Adding a new database unit test to a workflow project displays the following message.</p>
+    <p>
+        "An error occurred while loading the workflow. Please correct the following error and try reloading the document to view the workflow.<br />
+        The designer could not be shown for this file because none of the classes within it can be designed.<br />
+        The designer inspected the following classes in the file: DatabaseUnitTest1. The base clase DatabaseUnitTest1 for the class needs to be an Activity."</p>
+    <p>
+        This message is displayed incorrectly. The new database unit test is actually valid. You can dismiss the message, and it will not reappear.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Close the error. It will not reappear.
+    </p>
+    <h4>
+2.3.1.5.  Visual Basic Workflow designer requires Visual Web Developer to be installed.
+    </h4>
+    <p>
+    </p>
+    <p>
+        After Visual Studio 2008 is installed in Visual Basic-only mode, the Workflow Foundation designer does not work correctly. You cannot specify the required fields in Workflow projects, and that makes it impossible to build the solution.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Install Visual Web Developer by using Visual Studio 2008 Setup.
+    </p>
+   
+    <h4>
+        2.3.1.6. Visual Studio 2008 projects cannot build in Expression Blend.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Solutions and projects that are created in Visual Studio 2008 can be
+        opened and edited in Expression Blend, but they cannot be built there. Also,
+        when you open Expression Blend projects in Visual Studio 2008, they will be upgraded to the
+        Visual Studio 2008 format. After the project is upgraded, it can no longer be built
+        in Expression Blend; however, you can still open it and edit it in Expression Blend.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        For more information about availability and for installation instructions, visit
+        <a href="http://go.microsoft.com/fwlink/?LinkId=101872">here</a> or the <a href="http://www.microsoft.com/expression">
+            Microsoft Expression Web site</a>.</p>
+    <p>
+    </p>
+    <h4>
+        2.3.1.7. Visual Studio 2008 does not recognize Windows Mobile 6 SDK when the SDK
+        is already installed.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If a user installs Visual Studio 2008 on a computer that already has Windows Mobile 6 SDK, Visual Studio 2008 will not recognize the SDK. Repairing Windows Mobile 6 SDK will not solve this.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        1. Uninstall Windows Mobile 6 SDK.</p>
+    <p>
+        2. Reinstall Windows Mobile 6 SDK.</p>
+    <p>
+    </p>
+    <h4>
+        2.3.1.8 SQL Server Compact 3.5 does not use the Encrypt property of the SqlCeConnection
+        class.
+    </h4>
+    <p>
+The Encrypt property in the SqlCeConnection class should not be used. The property is retained in SQL Server Compact 3.5 only for backward compatibility. 
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Use the encryption mode property of the SqlCeConnection class to encrypt SQL Server Compact 3.5 database files. Uses of encryption mode, together with code samples, are as follows.</p>
+    <p>
+        1. To create a new encrypted SQL Server Compact 3.5 database.
+    </p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine("Data Source=Northwind.sdf;encryption mode=platform
+        default;Password=passw0rd;");<br />
+        engine.CreateDatabase();</p>
+    <p>
+        2. To upgrade a SQL Server 2005 Compact Edition (version 3.1) or SQL Server 2005 Mobile Edition (version 3.0) database to an encrypted SQL Server Compact 3.5 database. 
+    </p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine("Data Source=Northwind.sdf;Password=passw0rd;");<br />
+        engine.Upgrade ("Data Source=Northwind.sdf;encryption mode=platform default;Password=passw0rd;");</p>
+    <p>
+        3. To change the encryption mode of an existing SQL Server Compact 3.5 database.</p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine("Data Source=Northwind.sdf;Password=passw0rd;");<br />
+        engine.Compact("Data Source=Northwind.sdf;encryption mode=ppc2003 compatibility;Password=passw0rd;");</p>
+    <p>
+        4. To encrypt an unencrypted SQL Server Compact 3.5 database.</p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine("Data Source=Northwind.sdf");<br />
+        engine.Compact("Data Source=Northwind.sdf;encryption mode=platform default;Password=passw0rd;");<br />
+    </p>
+    <p>
+    </p>
+    <h4>
+2.3.1.9.  Design-time experience in Smart Device programs cannot be used when SSC 3.1 database is targeted.
+    </h4>
+    <p>
+A Smart Device programmer is unable to use any of the designer features, such as Add Datasource, Add New Connection, Create Database, Generate Data Forms, and drag-and-drop datasource objects onto the form designer, when she is programming against a SQL Server Compact Edition 3.1 database. The Smart device designer features default to SQL Server Compact 3.5 database.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Use Visual Studio 2005 Service Pack 1 to program against SQL Server
+        Compact Edition 3.1 database for Smart Device programs. For more information about using Visual Studio 2008
+        with SQL Server Compact Edition 3.1 database, see <a href="http://go.microsoft.com/fwlink/?LinkID=101885">
+            http://go.microsoft.com/fwlink/?LinkID=101885</a>.</p>
+    <h4>
+2.3.1.10.  During the upgrade of a Visual Studio 2005 project to Visual Studio 2008, the encrypted SQL Server Compact database is not upgraded, and ClickOnce applications must be re-published.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Database files (*.sdf) that are created by earlier version of SQL Server Compact are not compatible with SQL Server Compact 3.5. Un-encrypted database files from earlier versions of SQL Server Compact are upgraded when a Visual Studio 2005 project is upgraded in Visual Studio 2008. Encrypted database files must be manually upgraded. If the Visual Studio 2005 project uses ClickOnce to publish applications, the application should be re-published after the project has been upgraded in Visual Studio 2008.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Upgrade the encrypted database files by completing the following steps. 
+    </p>
+    <p>
+        1. Click <b>Data</b>.<br />
+        
+        2. Click <b>Add New Data Source</b>.<br />
+        
+        3. Click <b>Add Connection</b>. If an earlier version of the database file is open, a message appears. If you click <b>OK</b>, the <b>Upgrade to SQL Server Compact 3.5 Database</b> dialog box appears.<br />
+        </p>
+    <p>
+        Alternatively the SqlCeEngine.Upgrade API can be used for programmatic scenarios, as shown in the following code example.</p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine("Data Source=Northwind.sdf;Password=passw0rd;");<br />
+        engine.Upgrade ("Data Source=Northwind.sdf;encryption mode=platform default;Password=passw0rd;");</p>
+    <p>
+        If the project uses ClickOnce to publish applications, the application should be re-published after it has been upgraded in Visual Studio 2008. When you re-publish the Click Once application in Visual Studio 2008, you may see a warning that SQL Server 2005 Compact Edition prerequisite cannot be found for bootstrapping. You can ignore the warning. 
+    </p>
+    <p>
+    </p>
+    <h4>
+        2.3.1.11. SQL Server Compact 3.5 data types for parameters such as SqlDbType or DbType
+        should be explicitly set.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If the data types for parameters such as SqlDbType or DbType are not explicitly set, an exception will be thrown. 
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Explicitly set the data type for parameters such as SqlDbType or DbType. Doing this is critical in case of BLOB data types (image and ntext). A code example follows.</p>
+    <p>
+        SqlCeEngine engine = new SqlCeEngine(connString); 
+        <br />
+        engine.CreateDatabase();
+        <br />
+        engine.Dispose(); 
+        <br />
+        SqlCeConnection conn = new SqlCeConnection(connString); 
+        <br />
+        conn.Open(); 
+        <br />
+        SqlCeCommand cmd = conn.CreateCommand(); 
+        <br />
+        cmd.CommandText = "CREATE TABLE BlobTable(name nvarchar(128), blob ntext);"; 
+        <br />
+        cmd.ExecuteNonQuery();
+        <br />
+        cmd.CommandText = "INSERT INTO BlobTable(name, blob) VALUES (@name, @blob);"; 
+        <br />
+        SqlCeParameter paramName = cmd.Parameters.Add("name", SqlDbType.NVarChar, 128); 
+        <br />
+        SqlCeParameter paramBlob = cmd.Parameters.Add("blob", SqlDbType.NText); 
+        <br />
+        paramName.Value = "Name1"; 
+        <br />
+        paramBlob.Value = "Name1".PadLeft(4001); 
+        <br />
+        cmd.ExecuteNonQuery();
+    </p>
+    <p>
+    </p>
+    <h4>
+2.3.2. <a name="ADO.Net">ADO.NET</a>
+    </h4>
+    <h4>
+2.3.2.1.  After Visual Studio 2008 is upgraded, a warning is displayed that a MDAC 2.8 prerequisite is missing or that a built application does not run on Windows 2000 after it is installed.
+    </h4>
+    <p>
+    </p>
+    <p>
+        You may encounter one of the following problems:</p>
+    <p>
+        - A Visual Studio 2005 project was upgraded to Visual Studio 2008, and now a build warning says that a prerequisite is missing.</p>
+    <p>
+        - A built application that depends on MDAC does not run on Windows 2000.</p>
+    <p>
+        - Windows 2000 users cannot run a ClickOnce application because MDAC is missing.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        - If you do not require MDAC and you are getting a build warning, open the Prerequisites dialog box and then clear the MDAC prerequisite.</p>
+    <p>
+        - If you are targeting Windows 2000 clients and require the MDAC prerequisite, get the Bootstrapper package from the Internet, as follows.</p>
+    <p>
+        1. Open the Prerequisites dialog box and then click 'Check Microsoft Update for more redistributable components'. Doing this will open <a href="http://go.microsoft.com/fwlink/?linkid=40981">http://go.microsoft.com/fwlink/?linkid=40981</a>.</p>
+    <p>
+        2. On the Web page, download the MDAC Bootstrapper package and save it in a new folder in \Program Files\Microsoft SDKs\Windows\v6.0A\Bootstrapper\Packages\.</p>
+
+    <p>
+        - Get the Bootstrapper package from Visual Studio 2005.</p>
+    <p>
+        1. If Visual Studio 2005 is installed on the same computer, you can copy the MDAC28 folder in \Program Files Microsoft Visual Studio 8\SDK\v2.0\BootStrapper\Packages\ and then paste it in \Program Files\Microsoft SDKs\Windows\v6.0A\Bootstrapper\Packages\.</p>
+    <p>
+    </p>
+    <h4>
+2.3.3. <a name="Languages">Languages</a>
+    </h4>
+    <p>
+        There are no known issues.</p>
+    <h4>
+2.3.4. <a name="LINQ">LINQ</a>
+    </h4>
+    <h4>
+2.3.4.1.  Object Relational (O/R) Designer displays the message, “There is no Unicode byte order mark. Cannot switch to Unicode”, when a .dbml file that was created by using Visual Studio 2008 Beta 2 is opened.
+    </h4>
+    <p>
+    </p>
+    <p>
+        In Visual Studio 2008 Beta 2, the O/R Designer created .dbml files as UTF-8 byte-order even if UTF-16 encoding was specified in the actual file. Opening .dbml files created by using Beta 2 could raise the “There is no Unicode byte order mark. Cannot switch to Unicode” error.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Right-click the .dbml file in Solution Explorer, open by using the XML Editor, and then save the file. Doing this does not impact the actual content of the .dbml file and there is no data loss.</p>
+    <p>
+    </p>
+    <h4>
+2.3.5. <a name="Visual Studio Tools for Office">Visual Studio Tools for Office</a>
+    </h4>
+    <h4>
+2.3.5.1.  Office 2007 Service Pack 1 is required to preview Office InfoPath 2007 form templates.
+    </h4>
+    <p>
+Previewing Office InfoPath 2007 form templates in Visual Studio 2008 by pressing F5 or clicking the Preview button will fail and display an error, unless InfoPath 2007 Service Pack 1 or the QFE is installed. 
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+        The QFE is available at <a href="http://go.microsoft.com/fwlink/?LinkId=102084">http://go.microsoft.com/fwlink/?LinkId=102084</a>.
+    </p>
+    <h4>
+2.3.5.2.  Using Office SharePoint workflow templates on a 64-bit operating system is unsupported and causes an exception.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Visual Studio 2008 throws two exceptions if you try to create a SharePoint workflow project (SharePoint 2007 Sequential Workflow or SharePoint 2007 State Machine Workflow) on a 64-bit computer. The first exception message is "Object reference not set to an instance of an object". The second message is "SharePoint site location entered is not valid. The SharePoint site at http://&lt;serverpath&gt; could not be found. Verify that you have typed the URL correctly…"</p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Do not use the Visual Studio SharePoint workflow templates on a computer that is running a 64-bit operating system. For more information, see the Help topic, "Troubleshooting SharePoint Workflow Solutions".</p>
+        <h4>
+            2.3.5.3. Migrating Visual Studio Tools for Office (VSTO) projects from Visual Studio
+            2008 Beta 2 to the final version of Visual Studio 2008</h4>
+        <p>
+            You may experience build and runtime errors when building and running Beta 2 Office
+            projects in the final release version of Visual Studio. Changes have been made to
+            a number of VSTO reference assemblies.
+        </p>
+        <p>
+            <span style="text-decoration: underline">To resolve this issue:</span></p>
+        <p>
+            <span>Renamed Assemblies: If you receive an error for any of the following reference
+                assemblies, delete the old reference assembly and add the corresponding new reference
+                assembly to your project and then rebuild. </span>
+        </p>
+        <p>
+            Old Reference &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; New Reference&nbsp;
+        </p>
+        <p>
+            Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Microsoft.VisualStudio.Tools.Applications.ServerDocument.v9.0.dll
+            <span></span>
+        </p>
+        <p>
+            <span>Microsoft.VisualStudio.Tools.Office.dll &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Microsoft.Office.Tools.v9.0.dll</span></p>
+        <p>
+            <span></span><span>Microsoft.VisualStudio.Tools.Office.Common.dll &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;Microsoft.Office.Tools.Common.v9.0.dll </span>
+        </p>
+        <p>
+            <span>Microsoft.VisualStudio.Tools.Office.Excel.dll &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; Microsoft.Office.Tools.Excel.v9.0.dll </span>
+        </p>
+        <p>
+            <span>Microsoft.VisualStudio.Tools.Office.Outlook.dll &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp; Microsoft.Office.Tools.Outlook.v9.0.dll</span></p>
+        <p>
+            <span>Microsoft.VisualStudio.Tools.Office.Word.dll &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp; Microsoft.Office.Tools.Word.v9.0.dll</span></p>
+    <p>
+    </p>
+    <h4>
+2.3.6. <a name="Web Development">Web Development</a>
+    </h4>
+    <p>
+        There are no known issues.</p>
+    <h4>
+2.3.7. <a name="Windows Communication Foundation (WCF) Tools">Windows Communication Foundation
+            (WCF) Tools</a>
+    </h4>
+    <h4>
+2.3.7.1.  WcfTestClient may throw an exception if Biztalk Service SDK is installed.
+    </h4>
+    <p>
+    </p>
+    <p>
+        The Biztalk Service SDK introduces a metadata exchange (MEX) endpoint in the &lt;client&gt; section of the &lt;system.serviceModel&gt; element in the machine.config file. This setting generates the following exception when the service is invoked in WcfTestClient:</p>
+  
+    <p>
+        System.NullReferenceException: Object reference not set to an instance of an object</p>
+  
+    <p>
+        <u>To resolve this issue:</u></p>
+   
+    <p>
+        When you run the WcfTestClient, modify the machine.config file (located in \WINDOWS\Microsoft.NET\Framework\v2.0.50727\CONFIG\),by commenting out the &lt;client&gt; section that is nested in the &lt;system.serviceModel&gt; element. Re-enable the section when you use the Biztalk service SDK. 
+    </p>
+    <p>
+    </p>
+    <h4>
+2.3.7.2.  Setupvroot.bat setup script for WCF samples can fail on Windows Vista.
+    </h4>
+    <p>
+On Windows Vista, if the NetMsmqActivator service is enabled and Message Queuing (MSMQ) is not installed, then the iisreset utility does not work and the WCF samples setup script Setupvroot.bat will not run.
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Make sure that MSMQ is installed, or disable the NetMsmqActivator service on Windows Vista before you run the WCF samples setup script, Setupvroot.bat.
+    </p>
+    <h4>
+2.3.7.3.  WcfTestClient does not support some features of WCF.
+    </h4>
+    <p>
+    </p>
+    <p>
+        The following features of WCF are not supported by the WcfTestClient in this release:</p>
+    <p>
+        - Message contract and XML serialization, non-WCF Web services</p>
+    <p>
+        - Session/Context binding</p>
+    <p>
+        - Transaction</p>
+    <p>
+        - Duplex contract</p>
+    <p>
+        - Windows CardSpace, Certificate, User name/Password, Windows Authentication</p>
+    <p>
+        - Types: Stream, IDictionary collection, and DataSet</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        No workaround is available.</p>
+    <p>
+    </p>
+    <h4>
+2.3.7.4.  Service Model Metadata Utility tool (SvcUtil.exe) cannot generate data contracts from a running service.
+    </h4>
+    <p>
+    </p>
+    <p>
+        An example at the end of the Svcutil.exe help output indicates that you can use the /dataContractOnly (/dconly) option to generate data contracts from a running service. 
+    </p>
+    <p>
+        svcutil.exe /dconly http://service/metadataEndpoint
+        <br />
+        - Generate Data Contract types from a running service or online metadata documents.</p>
+    <p>
+        This usage does not work. You can only use the /dconly option to generate data contracts from local metadata files.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        1. Download the metadata from the running service by running the following command.</p>
+    <p>
+        svcutil.exe /target:metadata http://service/metadataEndpoint</p>
+    <p>
+        2. Run Svcutil.exe with the /dconly option on the downloaded metadata files, as follows. 
+    </p>
+    <p>
+        svcutil.exe /dconly *.wsdl *.xsd</p>
+    <p>
+    </p>
+    <h4>
+2.3.7.5.  Code generation language support in the Service Model Metadata Utility tool (Svcutil.exe).
+    </h4>
+    <p>
+    </p>
+    <p>
+        The Svcutil.exe tool can generate code for Web service clients and data types, from metadata in any language that has a managed code provider. Svcutil.exe has been tested with the C#, Visual Basic, and C++ managed code providers. Other code providers have not been tested and may generate code that does not compile or may be otherwise unusable.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Use one of the supported managed code providers, or manually edit the generated code to resolve any compilation issues.</p>
+    <p>
+    </p>
+    <h4>
+2.3.7.6.  Managed C++ code that is generated by using the Service Model Metadata Utility tool (Svcutil.exe) may not compile.
+    </h4>
+    <p>
+    </p>
+    <p>
+        You can use the Svcutil.exe tool to generate code for Web service clients and data types, from metadata. However, there are known issues with the C++ code provider in Visual Studio 2008 that can cause Svcutil.exe to generate Managed C++ code that may not compile. 
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        Manually alter the generated code to resolve any compiler errors.</p>
+    <p>
+    </p>
+    <h4>
+2.3.8. <a name="Windows Presentation Foundation (WPF) Designer for Visual Studio">Windows
+            Presentation Foundation (WPF) Designer for Visual Studio</a>
+    </h4>
+    <h4>
+2.3.8.1.  Property browser displays values, such as dates and numbers, by using the U.S. format.
+    </h4>
+    <p>
+    </p>
+    <p>
+        The property browser in the WPF designer displays and edits values by using the U.S. format. This matches the XAML convention of using the en-US CultureInfo. For example, dates and numbers are always in U.S. format. Dates are always displayed mm/dd/yy. If you enter a date value in the property browser. it will be converted with the assumption that it is in mm/dd/yy format.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        No workaround is available.</p>
+    <p>
+    </p>
+     <h4>
+2.3.8.2.  Code Refactoring does not make changes to XAML files.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If you use code refactor to make type or member modifications, the refactoring will
+        not propagate to the XAML files.&nbsp;
+    </p>
+    <p>
+        For example, given a UserControl named MyCustomControl, if you use refactor
+        to change the name of that UserControl to FancyControl in the code file, that
+        name change will only affect code files and any instances of MyCustomControl in
+        XAML files will not be updated.Additionally, the build may incorrectly succeed without error until a rebuild or
+        clean of the project or solution is performed.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        There is no direct resolution. You must make the modifications by using Find and Replace.</p>
+    <p>
+    </p>
+    <h4>
+2.3.8.3.  Making changes to XAML will not refactor code files.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If you make changes to a type or member in a XAML file, those changes will not propagate to the code files.</p>
+    <p>
+        For example, if you change the name of Button that has event handlers associated
+        with it by using the XAML editor, the code behind will not be updated.<br />
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        There is no direct resolution. You must make the modifications by using Find and Replace.</p>
+    <p>
+    </p>
+    <h4>
+2.3.8.4.  Renaming from Solution Explorer does not prompt rename refactoring in
+        WPF projects.
+    </h4>
+    <p>
+    </p>
+    <p>
+        If you right-click a XAML file in Solution Explorer and then click Rename, the
+        file name will be changed but there will not be any prompt to refactor the class
+        name in XAML or code-behind. In particular, if you rename the XAML file that is referred
+        to by the StartupUri property in the Application XAML file, for example, rename Window1.xaml to
+        MainWindow.xaml, then you must manually change the StartupUri property.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+    </p>
+    <p>
+        There is no direct resolution. You must make the modifications by using Find and Replace.</p>
+    <p>
+    </p>
+    
+    <h4>
+2.3.9. <a name="Windows Workflow Foundation (WF) Tools">Windows Workflow Foundation (WF)
+            Tools</a>
+    </h4>
+    <h4>
+2.3.9.1.  Custom activities do not appear in the Visual Studio 2008 toolbox when you use Visual C++ Development settings.
+    </h4>
+    <p>
+    </p>
+    <p>
+        Custom activities do not appear in the Visual Studio 2008 toolbox when you use Visual C++ Development settings.</p>
+    <p>
+    </p>
+    <p>
+        <u>To resolve this issue:</u></p>
+    <p>
+Use different development settings, for example, Visual Basic or C#.
+    </p>
+
+<H4>
+2.3.10. <A name="Windows SDK Integration">Windows SDK Integration</A>
+</H4>
+<P>There are no known issues.</P>
+<H2>
+3. <A name="Related Links">Related Links</A>
+</H2>
+<P>
+    3.1. <A name="Visual Studio Team Foundation Server Readme">Visual Studio Team Foundation Server Readme</A>:
+    <a href= "http://go.microsoft.com/fwlink/?LinkId=102510">http://go.microsoft.com/fwlink/?LinkId=102510</a></P>
+<P> 3.2. <A name="Visual Studio Express Edition Readme">Visual Studio Express Edition Readme</A>:&nbsp;
+    <a href=" http://go.microsoft.com/fwlink/?LinkId=102509">http://go.microsoft.com/fwlink/?LinkId=102509</a></P>
+        <p>
+            3.3. <A name=".Net Framework Readme">.NET Framework Readme</A>:<a href=" http://go.microsoft.com/fwlink/?LinkId=102511">http://go.microsoft.com/fwlink/?LinkId=1102511</a></p>
+<P> 3.4. <A name="MSDN Library for Visual Studio Readme">MSDN Library for Visual Studio Readme</A>:
+    <a href=" http://go.microsoft.com/fwlink/?LinkId=102512">http://go.microsoft.com/fwlink/?LinkId=102512</a>&nbsp;</P>
+        <p>
+            3.5. Download SQL Server Compact 3.5 Books Online and Samples from <a href="http://go.microsoft.com/fwlink/?LinkID=96191">
+                http://go.microsoft.com/fwlink/?LinkID=96191</a> and Synchronization Services for ADO.NET v1.0 Books Online
+            and Samples from <span style="font-size: 10pt; font-family: 'Arial','sans-serif';
+                mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US;
+                mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><a href="http://go.microsoft.com/fwlink/?LinkId=80742">
+                    <font color="#0000ff">http://go.microsoft.com/fwlink/?LinkId=80742</font></a></span>.
+            To add these to the Visual Studio Combined Help Collection, complete the following steps.</p>
+        <p>
+            1. Click Start, point to All Programs, Microsoft Visual Studio
+            2008, and then click Microsoft Visual Studio 2008 Documentation.<br />
+            2. In the Visual Studio Combined Help Collection, click Help
+            and then click Index.<br />
+            3. In the Look for box, enter collection manager, and then
+            click the Help entry under collection manager in the Index.<br />
+            4. In the Combined Help Collection Manager topic, select SQL
+            Server Compact 3.5, and then click Update VSCC.<br />
+            5. In the two dialog boxes that appear, read the requirements,
+            and then click OK.<br />
+            6. Close and then reopen the Visual Studio Combined Help Collection.
+            SQL Server Compact Books Online is now available in the Table of Contents, Index,
+            Search, and F1 Help.</p>
+        <p>
+            3.6. <span style="font-size: 10pt; line-height: 115%; font-family: 'Segoe UI','sans-serif'">
+                For the latest information about issues with using the WPF designer in
+                Visual Studio 2008, see the Cider wiki on Channel9, <a href="http://go.microsoft.com/fwlink/?LinkId=83541">
+                    <font color="#0000ff">http://go.microsoft.com/fwlink/?LinkId=83541</font></a>.</span></p>
+        <p>
+            3.7. Visual J# MSDN developer center:<a href=" http://go.microsoft.com/fwlink/?LinkId=102513">http://go.microsoft.com/fwlink/?LinkId=102513</a><a href="http://msdn.microsoft.com/vjsharp" title="http://msdn.microsoft.com/vjsharp"></a><span style="font-size: 10pt; line-height: 115%;
+                    font-family: 'Segoe UI','sans-serif'"></span></p>
+        <p>
+            3.8. The XML to Schema tool can be downloaded from <a href=" http://go.microsoft.com/fwlink/?LinkId=102514">
+                http://go.microsoft.com/fwlink/?LinkId=102514</a></p>
+        <p>
+            The XML to Schema tool is a free project-item template that automates the creation
+            of XML schema sets from any number of XML documents. If you are working with LINQ
+            to XML in Visual Basic 2008, this utility may significantly improve your editing
+            experience by adding XML schemas (.xsd files) to your project that then provide
+            IntelliSense for XML properties. The tool can also be used to create an
+            XML schema set from a set of existing XML documents.<br />
+            <span style="font-size: 12pt"></span>
+        </p>
+        <p>
+            &copy; 2007 Microsoft Corporation. All rights reserved.
+                <a id="ctl00_BottomControl1_MSFT_Terms" href="http://www.microsoft.com/info/cpyright.mspx"
+                    title="Terms of Use">Terms of Use</a> &nbsp;|
+                <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" title="Trademarks">
+                    Trademarks</a> &nbsp;| <a href="http://www.microsoft.com/info/privacy.mspx"
+                        title="Privacy Statement">Privacy Statement</a></p>
+
+</BODY>
+</HTML>

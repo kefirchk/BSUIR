@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+***********************************************************************
+ 
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+ 
+ THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
+ KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+ PARTICULAR PURPOSE.
+***********************************************************************
+-->
+
+<Product 
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper" 
+  ProductCode="Microsoft.VSTORuntime.3.0">
+  <RelatedProducts>
+    <DependsOnProduct Code="Microsoft.Net.Framework.3.5" />  
+  </RelatedProducts>
+  <!-- Defines the list of files to be copied on build. -->
+  <PackageFiles CopyAllPackageFiles="false">
+    <PackageFile Name="VSTOR30.exe" HomeSite="VSTORExe" PublicKey="3082010A0282010100A2DB0A8DCFC2C1499BCDAA3A34AD23596BDB6CBE2122B794C8EAAEBFC6D526C232118BBCDA5D2CFB36561E152BAE8F0DDD14A36E284C7F163F41AC8D40B146880DD98194AD9706D05744765CEAF1FC0EE27F74A333CB74E5EFE361A17E03B745FFD53E12D5B0CA5E0DD07BF2B7130DFC606A2885758CB7ADBC85E817B490BEF516B6625DED11DF3AEE215B8BAF8073C345E3958977609BE7AD77C1378D33142F13DB62C9AE1AA94F9867ADD420393071E08D6746E2C61CF40D5074412FE805246A216B49B092C4B239C742A56D5C184AAB8FD78E833E780A47D8A4B28423C3E2F27B66B14A74BD26414B9C6114604E30C882F3D00B707CEE554D77D2085576810203010001"/>
+  </PackageFiles>
+
+  <InstallChecks>
+    <MsiProductCheck Property="VSTORuntimeInstalled" Product="{8FB53850-246A-3507-8ADE-0060093FFEA6}"/>
+  </InstallChecks>
+
+  <!-- Defines how to run the Setup package. -->
+  <Commands Reboot="Defer">
+    <Command 
+      PackageFile="VSTOR30.exe" 
+      Arguments=' /q:a /c:"install /q /l"' 
+      EstimatedInstalledBytes="10000000" 
+      EstimatedTempBytes="10000000"
+      EstimatedInstallSeconds="60">
+      <InstallConditions>
+        <BypassIf Property="VSTORuntimeInstalled" Compare="ValueGreaterThanOrEqualTo" Value="3"/>
+        <!-- Requires the user to be an admin user when installing the prerequisite -->
+        <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired"/>
+      </InstallConditions>
+      <ExitCodes>
+        <ExitCode Value="0" Result="Success"/>
+        <ExitCode Value="1641" Result="SuccessReboot"/>
+        <ExitCode Value="3010" Result="SuccessReboot"/>
+        <DefaultExitCode Result="Fail" FormatMessageFromSystem="true" String="GeneralFailure" />
+      </ExitCodes>
+    </Command>
+  </Commands>
+</Product>
