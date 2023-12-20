@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Pictures/account_background.png</file>
+        <file>Pictures/account_bank.jpg</file>
+        <file>Pictures/account_edit.png</file>
+        <file>Pictures/admin.jpg</file>
+        <file>Pictures/credits_background.png</file>
+        <file>Pictures/deposit_background.png</file>
+        <file>Pictures/main_background.png</file>
+        <file>Pictures/transfer_background.jpg</file>
+    </qresource>
+</RCC>

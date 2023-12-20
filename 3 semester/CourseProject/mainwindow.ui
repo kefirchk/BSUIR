@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>706</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow
+{
+	background-color: rgb(222, 222, 222);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="main_stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="startPictureBackGround_label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>708</width>
+        <height>562</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>54</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>:/images/Pictures/main_background.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signIn_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>180</y>
+        <width>93</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Войти</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signUp_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>230</y>
+        <width>231</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Зарегистрироваться</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signExit_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>300</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="welcome_label">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Личный кабинет</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="Line" name="line_11">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Главная</string>
+         </attribute>
+         <widget class="QLabel" name="mainPageBackGround_label">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>30</y>
+            <width>691</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>:/images/Pictures/account_background.png</pixmap>
+          </property>
+         </widget>
+         <widget class="Line" name="line_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>421</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="welcome_label_3">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>20</y>
+            <width>277</width>
+            <height>33</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Tahoma</family>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Добро пожаловать!</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="currency_converter_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>181</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Конвертер валют</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="deposit_calculator_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>160</y>
+            <width>251</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Депозитный калькулятор</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="credit_calculator_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>210</y>
+            <width>241</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Кредитный калькулятор</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="options_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>260</y>
+            <width>111</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Настройки</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="mainPageExit_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>310</y>
+            <width>191</width>
+            <height>45</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Выйти из аккаунта</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="increase_balance">
+         <attribute name="title">
+          <string>Мои счета</string>
+         </attribute>
+         <widget class="QLabel" name="accountOperations_label">
+          <property name="geometry">
+           <rect>
+            <x>-40</x>
+            <y>310</y>
+            <width>752</width>
+            <height>291</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>:/images/Pictures/account_bank.jpg</pixmap>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>10</y>
+            <width>620</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QComboBox" name="chooseCurrency_comboBox">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>BYN</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>RUB</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>DOL</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>EUR</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="openNewAcc_pushButton">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Открыть счет</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="closeAcc_pushButton">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Закрыть счет</string>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addMoney_pushButton">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Пополнить</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="takeMoneyFrom_pushButton">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Снять</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableView" name="personalAccounts_tableView">
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="updateAccountInfo_pushButton">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Обновить</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Переводы</string>
+         </attribute>
+         <widget class="QLabel" name="tranferPicture_label">
+          <property name="geometry">
+           <rect>
+            <x>-170</x>
+            <y>-20</y>
+            <width>891</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>:/images/Pictures/transfer_background.jpg</pixmap>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="transferTo_pushButton">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>170</y>
+            <width>181</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Titillium Web</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Перевести</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="passwordConfirm_lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>340</y>
+            <width>221</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="idOfReceiver_lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>340</y>
+            <width>221</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="sumOfTransfer_lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>290</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Кредиты</string>
+         </attribute>
+         <widget class="QLabel" name="myCredits_label">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>10</y>
+            <width>137</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Verdana</family>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Мои кредиты</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="takeNewCredit_groupBox">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>241</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Взятие нового кредита</string>
+          </property>
+          <widget class="Line" name="line_14">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>417</y>
+             <width>845</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>221</width>
+             <height>223</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QComboBox" name="typeOfNewCredit_comboBox">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <item>
+               <property name="text">
+                <string>Потребительский</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>На недвижимость</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Льготный</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="termNewCredit_label">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Срок кредита, годы</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="termNewCreddit_spinBox">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>50</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="percentNewCredit_label">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Ставка, %</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDoubleSpinBox" name="percentNewCreditdoubleSpinBox">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_16">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="sumNewCredit_label">
+                <property name="text">
+                 <string>Сумма</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="sumNewCredit_lineEdit"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_19">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="takeNewCredit_pushButton">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Взять кредит</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="creditBackGround">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>270</y>
+            <width>631</width>
+            <height>286</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>:/images/Pictures/credits_background.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>411</width>
+            <height>211</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QTableWidget" name="myCredits_tableWidget">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QPushButton" name="payForCredit_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Оплатить</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="updateMyCredits_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Обновить</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Вклады</string>
+         </attribute>
+         <widget class="QLabel" name="myDeposits_label">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>10</y>
+            <width>137</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Verdana</family>
+            <pointsize>11</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Мои вклады</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>241</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Взятие нового депозита</string>
+          </property>
+          <widget class="Line" name="line_15">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>417</y>
+             <width>845</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>221</width>
+             <height>223</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QComboBox" name="currencyNewDeposit_comboBox">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <item>
+               <property name="text">
+                <string>BYN</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>RUB</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>DOL</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>EUR</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_17">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QLabel" name="termNewDeposit_label">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Срок депозита, годы</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="termNewDeposit_spinBox">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>50</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_18">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="percentNewDeposit_label">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Ставка, %</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDoubleSpinBox" name="percentNewDeposit_doubleSpinBox">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_20">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLabel" name="sumNewDeposit_label">
+                <property name="text">
+                 <string>Сумма</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="sumNewDeposit_lineEdit"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_21">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="takeNewDeposit_pushButton">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Взять депозит</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="depositsBackGround_label">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>270</y>
+            <width>626</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>:/images/Pictures/deposit_background.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>41</y>
+            <width>411</width>
+            <height>211</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QTableWidget" name="myDeposits_tableWidget">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QPushButton" name="takeFromDeposit_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Снять деньги</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="updateMyDeposits_pushButton">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Обновить</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>История переводов</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>20</y>
+            <width>561</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QTableWidget" name="transferHistory_tableWidget">
+             <property name="focusPolicy">
+              <enum>Qt::WheelFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#transferHistory_tableWidget
+{
+background-color: rgb(170, 255, 255);
+border-top-color: rgb(0, 0, 0);
+}</string>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="cleanHistory_pushButton">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Очистить историю</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>-170</x>
+        <y>90</y>
+        <width>411</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>:/images/Pictures/admin.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>11</y>
+        <width>16</width>
+        <height>819</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>441</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLineEdit" name="search_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="search_pushButton">
+           <property name="text">
+            <string>Найти</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QTableWidget" name="forAdmin_tableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="sortingEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>231</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="changeCurrRate_pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Изменить курс валют</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="showAllUsers_pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);</string>
+         </property>
+         <property name="text">
+          <string>Показать пользователей</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="editUser_pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 127);</string>
+         </property>
+         <property name="text">
+          <string>Изменить поля</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteUser_pushButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 78, 81);</string>
+         </property>
+         <property name="text">
+          <string>Удалить пользователя</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>480</y>
+        <width>206</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="backForAdmin_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>490</y>
+        <width>172</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>540</y>
+        <width>206</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>223</width>
+        <height>77</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="admin_mode_label">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>18</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Режим</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="openExternalLinks">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>18</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>администратора</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QCommandLinkButton" name="backFromUserOptions_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>480</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="infoAboutUser_tableView">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>61</y>
+        <width>451</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ava_label">
+      <property name="geometry">
+       <rect>
+        <x>-80</x>
+        <y>60</y>
+        <width>311</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>:/images/Pictures/account_edit.png</pixmap>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>51</y>
+        <width>688</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="accountOptions_label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>688</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Настройки аккаунта</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>251</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(234, 234, 234);
+</string>
+      </property>
+      <property name="title">
+       <string>Техническая поддержка</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>234</width>
+         <height>59</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Телефон:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>+375 (44) 468-30-52</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>prostolex2004@mail.ru</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>240</y>
+        <width>392</width>
+        <height>236</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="changeParametres_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>150</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>706</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="given_credits"/>
+    <addaction name="given_deposits"/>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="given_credits">
+   <property name="text">
+    <string>Выдаваемые кредиты</string>
+   </property>
+  </action>
+  <action name="given_deposits">
+   <property name="text">
+    <string>Выдаваемые депозиты</string>
+   </property>
+  </action>
+  <action name="undo">
+   <property name="text">
+    <string>Отменить действие</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>О приложении</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sign</class>
+ <widget class="QDialog" name="Sign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="sign_stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Авторизация</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="loginSignIn_label">
+          <property name="font">
+           <font>
+            <family>Harrington</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Логин</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="loginSignIn_lineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="passwordSignIn_label">
+          <property name="font">
+           <font>
+            <family>Harrington</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Пароль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="passwordSignIn_lineEdit"/>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QDialogButtonBox" name="signIn_buttonBox">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>381</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Регистрация</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="surnameSignUp_lineEdit"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="repeatPasswordSignUp_lineEdit"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDateEdit" name="dateOfBirthSignUp_lineEdit"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="loginSignUp_lineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="passwordSignUp_label">
+          <property name="text">
+           <string>Пароль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="loginSignUp_label">
+          <property name="text">
+           <string>Логин</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="nameSignUp_label">
+          <property name="text">
+           <string>Имя</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="nameSignUp_lineEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="repeatPasswordSignUp_label">
+          <property name="text">
+           <string>Повторите пароль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="dateOfBirthSignUp_label">
+          <property name="text">
+           <string>Дата рождения</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="passwordSignUp_lineEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="surnameSignUp_label">
+          <property name="text">
+           <string>Фамилия</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="agree_checkBox">
+        <property name="text">
+         <string>Я подтверждаю, что прочитал(a) лицензионное соглашение,</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="agree_label">
+        <property name="text">
+         <string>и даю свое согласие на обработку персональных данных.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDialogButtonBox" name="signUp_buttonBox">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

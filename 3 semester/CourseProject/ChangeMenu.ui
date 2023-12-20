@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChangeMenu</class>
+ <widget class="QDialog" name="ChangeMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>681</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QDialogButtonBox" name="ExchCurrRate_buttonBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>341</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newRUBRate_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newDOLRate_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newEURRate_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inviteToEnterNewExchRate_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>439</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>18</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Введите новый курс валют:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QPushButton" name="addToAccSum_Button">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>151</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Пополнить</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="addingSum_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>113</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inviteToAddAccSum_label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>340</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Введите сумму пополнения:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QPushButton" name="takeFromAccSum_Button">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>151</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Снять</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inviteToTakeFromAccSum_label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>327</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Введите сумму для снятия:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="takkingFromSum_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>113</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QPushButton" name="closeGivenCredits_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>420</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="givenCredits_tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>661</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="creditsOnConcessional_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>420</y>
+       <width>94</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Льготные</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="creditsOnConsumer_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>149</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Потребительские</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="creditdsOnRealState_checkBox">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>420</y>
+       <width>153</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>На недвижимость</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="showPossibleCredits_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>420</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Показать</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QTableView" name="givenDeposits_tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>661</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="closeGivenDeposits_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>420</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="showPossibleDeposits_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>420</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Показать</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_6">
+    <widget class="QPushButton" name="payForCreditSum_Button">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>151</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Оплатить</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="payingCreditSum_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>113</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inviteToPayCreditSum_label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>340</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tahoma</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Введите сумму для оплаты:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_7">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>261</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>205</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="undo_pushButton">
+           <property name="text">
+            <string>Undo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="redo_pushButton">
+           <property name="text">
+            <string>Redo</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="changeLogin_label">
+             <property name="text">
+              <string>Логин</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="changeLogin_lineEdit"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="changePassword_label">
+             <property name="text">
+              <string>Пароль</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="changePassword_lineEdit"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="changeName_label">
+             <property name="text">
+              <string>Имя</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="changeName_lineEdit"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="changeSurname_label">
+             <property name="text">
+              <string>Фамилия</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="changeSurname_lineEdit"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveChanges_pushButton">
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ExchCurrRate_buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ChangeMenu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ExchCurrRate_buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ChangeMenu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>undo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeLogin_lineEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>undo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changePassword_lineEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>undo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeName_lineEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>148</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>undo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeSurname_lineEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeLogin_lineEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changePassword_lineEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeName_lineEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redo_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>changeSurname_lineEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
