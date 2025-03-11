@@ -1,0 +1,590 @@
+//import java.awt.event.{ActionEvent, ActionListener}
+//import javax.swing.{JButton, JFrame, JPanel, SwingUtilities}
+//import java.awt.Dimension
+//import javax.swing.{JFrame, JLabel, JTextField, JPanel, SwingUtilities, JTextArea}
+//import java.sql.{Connection, DriverManager, ResultSet}
+//import java.awt.Color
+//
+//object Lab {
+//  
+//  val frame = new JFrame("Store")
+//  frame.setSize(605, 400)
+//  frame.setLayout(null)
+//  frame.getContentPane().setBackground(Color.DARK_GRAY)
+//  frame.setLocationRelativeTo(null)
+//  
+//  
+//  def main(args: Array[String]): Unit = {
+//    SwingUtilities.invokeLater(() => {
+//      
+//      //creating labels for text fields and setting color
+//      val productLabel = new JLabel("Product")
+//      productLabel.setForeground(Color.WHITE)
+//      val priceLabel = new JLabel("Price")
+//      priceLabel.setForeground(Color.WHITE)
+//      val countLabel = new JLabel("Count")
+//      countLabel.setForeground(Color.WHITE)
+//      val moreThanLabel = new JLabel("More than")
+//      moreThanLabel.setForeground(Color.WHITE) 
+//      val segmentBoundaryLabel = new JLabel("Segment [ ]")
+//      segmentBoundaryLabel.setForeground(Color.WHITE)
+//      //set size of labels and place them in the frame
+//      productLabel.setBounds(40, 20, 100, 30)
+//      priceLabel.setBounds(160, 20, 100, 30)
+//      countLabel.setBounds(275, 20, 100, 30)
+//      moreThanLabel.setBounds(380, 20, 100, 30)
+//      segmentBoundaryLabel.setBounds(490, 20, 100, 30)
+//      
+//      //creating text fields for data input
+//      val productField = new JTextField(20)
+//      val priceField = new JTextField(20)
+//      val countField = new JTextField(20)
+//      val moreThanField = new JTextField(20)
+//      val segmentField = new JTextField(20)
+//      //set size of text fields and place them in the frame
+//      productField.setBounds(12, 50, 100, 35)
+//      priceField.setBounds(127, 50, 100, 35)
+//      countField.setBounds(243, 50, 100, 35)
+//      moreThanField.setBounds(359, 50, 100, 35)
+//      segmentField.setBounds(475, 50, 100, 35)
+//      
+//      //creating buttons
+//      val insertButton = new JButton("Insert")
+//      insertButton.setBackground(Color.CYAN)
+//      insertButton.setForeground(Color.DARK_GRAY)
+//      val getAllButton = new JButton("Get all")
+//      getAllButton.setBackground(Color.CYAN)
+//      getAllButton.setForeground(Color.DARK_GRAY)
+//      val getMaxButton = new JButton("Get max")
+//      getMaxButton.setBackground(Color.CYAN)
+//      getMaxButton.setForeground(Color.DARK_GRAY)
+//      val getMaxGroupByButton = new JButton("Get max (group by)")
+//      getMaxGroupByButton.setBackground(Color.CYAN)
+//      getMaxGroupByButton.setForeground(Color.DARK_GRAY)
+//      val getMoreThanButton = new JButton("Get all >")
+//      getMoreThanButton.setBackground(Color.CYAN)
+//      getMoreThanButton.setForeground(Color.DARK_GRAY)
+//      val getGroupCoutButton = new JButton("Get group count")
+//      getGroupCoutButton.setBackground(Color.CYAN)
+//      getGroupCoutButton.setForeground(Color.DARK_GRAY)
+//      val getFromSegmentButton = new JButton("Get from segment")
+//      getFromSegmentButton.setBackground(Color.CYAN)
+//      getFromSegmentButton.setForeground(Color.DARK_GRAY)
+//      //set button size and place them in the frame
+//      insertButton.setBounds(5, 100, 140, 40)
+//      getAllButton.setBounds(150, 100, 140, 40)
+//      getMaxButton.setBounds(295, 100, 140, 40)
+//      getMaxGroupByButton.setBounds(440, 100, 140, 40)
+//      getMoreThanButton.setBounds(5, 145, 140, 40)
+//      getGroupCoutButton.setBounds(150, 145, 140, 40)
+//      getFromSegmentButton.setBounds(295, 145, 140, 40)
+//      
+//      //creating text field for result output
+//      val textField = new JTextArea()
+//      //set size and position
+//      textField.setBounds(5, 200, 577, 150)
+//      
+//      //add buttons to the frame
+//      frame.add(insertButton)
+//      frame.add(getAllButton)
+//      frame.add(getMaxButton)
+//      frame.add(getMaxGroupByButton)
+//      frame.add(getMoreThanButton)
+//      frame.add(getGroupCoutButton)
+//      frame.add(getFromSegmentButton)
+//      //add labels to the frame
+//      frame.add(productLabel)
+//      frame.add(priceLabel)
+//      frame.add(countLabel)
+//      frame.add(moreThanLabel)
+//      frame.add(segmentBoundaryLabel)
+//      //add text field to the frame
+//      frame.add(productField)
+//      frame.add(priceField)
+//      frame.add(countField)
+//      frame.add(moreThanField)
+//      frame.add(segmentField)
+//      //add text field for output to the frame
+//      frame.add(textField)
+//      
+//      insertButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//          val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          val product = productField.getText()
+//          val price = priceField.getText()
+//          val count = countField.getText()
+//          if(product.length() != 0 && price.length() != 0 && count.length() != 0){
+//            try{
+//              val statement = connection.createStatement()
+//              val rs = statement.execute("INSERT INTO new_products(product,price,count) VALUES ('"+ product + "'," + price + "," + count + ")")
+//              productField.setText("")
+//              priceField.setText("")
+//              countField.setText("")
+//            }
+//            finally{
+//              connection.close()
+//            }
+//          }
+//        }
+//      })
+//      
+//      getAllButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//         val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//
+//          val connection = DriverManager.getConnection(url, username, password)          
+//          try{
+//            val statement = connection.createStatement()
+//            val rs = statement.executeQuery("SELECT * FROM new_products") //get all columns from table 
+//            textField.setText("")
+//            while(rs.next()){
+//              val product = rs.getString("product")
+//              val price = rs.getInt("price")
+//              val count = rs.getInt("count")
+//              textField.append("PRODUCT: " +  product + " PRICE: " +  price + "  COUNT: " + count + "\n")
+//            }
+//          }
+//          finally{
+//            connection.close()
+//          }
+//        }
+//      })
+//      
+//      getMoreThanButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//         val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          val minPrice = moreThanField.getText().toString().trim()
+//          if(minPrice.length() != 0){
+//            try{
+//              val statement = connection.createStatement()
+//              val rs = statement.executeQuery("SELECT * FROM new_products WHERE price > " + minPrice)
+//            
+//              textField.setText("")
+//              textField.append("Products with price more than " + minPrice + ":\n")
+//              while(rs.next()){
+//                val product = rs.getString("product")
+//                val price = rs.getInt("price")
+//                val count = rs.getInt("count")
+//                textField.append("PRODUCT: " +  product + " PRICE: " +  price + "  COUNT: " + count + "\n")
+//               }
+//              moreThanField.setText("")
+//            }
+//            finally{
+//              connection.close()
+//            }
+//          }
+//        }
+//      })
+//      
+//      getMaxButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//          val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          try{
+//            val statement = connection.createStatement()
+//            val rs1 = statement.executeQuery("SELECT MAX(price * count) AS max FROM new_products")
+//            
+//            var max: Int = 0
+//            while(rs1.next()){
+//              max = rs1.getInt("max")
+//            }
+//            val rs = statement.executeQuery("SELECT * FROM new_products WHERE price * count = " + max)
+//            
+//            textField.setText("")
+//            textField.append("Max (price * count):\n")
+//            while(rs.next()){
+//              val product = rs.getString("product")
+//              val price = rs.getInt("price")
+//              val count = rs.getInt("count")
+//              textField.append("PRODUCT: " +  product + " PRICE: " +  price + "  COUNT: " + count + "\n")
+//            }
+//          }
+//          finally{
+//            connection.close()
+//          }
+//        }
+//      })
+//      
+//      getMaxGroupByButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//          val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          try{
+//            val statement = connection.createStatement()
+//            val rs = statement.executeQuery("SELECT MAX(price*count) as pric, product FROM new_products GROUP BY product HAVING price*count = (SELECT MAX(price*count) FROM new_products)")      
+//            textField.setText("")
+//            textField.append("Max (price * count):\n")
+//            while(rs.next()){
+//              val product = rs.getString("product")
+//              val price = rs.getInt("price")
+//              val count = rs.getInt("count")
+//              textField.append("PRODUCT: " +  product + " PRICE: " +  price + "  COUNT: " + count + "\n")
+//            }
+//          }
+//          finally{
+//            connection.close()
+//          }
+//        }
+//      })
+//      
+//      getGroupCoutButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//          val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          try{
+//            val statement = connection.createStatement()
+//            val product = productField.getText().toString().trim()
+//            val rs = statement.executeQuery("SELECT product, SUM(count) AS count FROM new_products GROUP BY product")
+//            textField.setText("")
+//            textField.append("Products count:\n")
+//            while(rs.next()){
+//              val product = rs.getString("product")
+//              val count = rs.getInt("count")
+//              textField.append("PRODUCT: " +  product + "  COUNT: " + count + "\n")
+//            }
+//            moreThanField.setText("")
+//          }
+//          finally{
+//            connection.close()
+//          }
+//        }
+//      })
+//      
+//      getFromSegmentButton.addActionListener(new ActionListener{
+//        override def actionPerformed(e: ActionEvent): Unit = {
+//          val url = "jdbc:mysql://localhost:3306/mydb"
+//          val username = "root"
+//          val password = "root"
+//          
+//          Class.forName("com.mysql.cj.jdbc.Driver")
+//          val connection = DriverManager.getConnection(url, username, password)
+//          
+//          try{
+//            val statement = connection.createStatement()
+//            val segment = segmentField.getText().toString().trim()
+//            val bounds = segment.split(",")
+//            //val rs = statement.executeQuery("SELECT * FROM new_products WHERE price > " + bounds(0) + " AND price < " + bounds(1))
+//            val rs = statement.executeQuery("SELECT * FROM new_products WHERE price BETWEEN " + bounds(0) + " AND " + bounds(1))
+//            textField.setText("")
+//            textField.append("Products with price [" + bounds(0) +", "+ bounds(1) +"]:\n")
+//            while(rs.next()){
+//              val product = rs.getString("product")
+//              val price = rs.getInt("price")
+//              val count = rs.getInt("count")
+//              textField.append("PRODUCT: " +  product + " PRICE: " +  price + "  COUNT: " + count + "\n")
+//            }
+//            segmentField.setText("")
+//          }
+//          finally{
+//            connection.close()
+//          }
+//        }
+//      })
+//      frame.setVisible(true)
+//    })
+//  }
+//}
+////new_products
+////выевести все товары между ценой[a, b] between
+
+
+////task 7
+//import scala.io.Source
+//import java.io.PrintWriter
+//
+//object Lab {
+//  def main(args: Array[String]): Unit = {
+//    val fileName = "file.txt";
+//    val writer = new PrintWriter(fileName)
+//    writer.write("Hello! My dear friend")
+//    writer.write("Hy! Amigo")
+//    writer.close()
+//    val reader = Source.fromFile(fileName);
+//    for(line <- reader.getLines()){
+//      print(line)
+//    }
+//    reader.close()
+//    
+//  }
+//}
+
+////task18
+//import org.apache.commons.math3.optim.linear._
+//  import org.apache.commons.math3.optim.linear.LinearConstraint
+//  import java.util.ArrayList
+//  import org.apache.commons.math3.optim.linear.Relationship
+//  import org.apache.commons.math3.optim.PointValuePair
+//  import org.apache.commons.math3.optim.nonlinear.scalar.GoalType
+//  
+//  object Lab {
+//  	def main(args:Array[String]):Unit = {
+//  		// create a constraint: 2x + 3y <= 4
+//  		val coeffs: Array[Double] = Array(2.0, 3.0)
+//  		val coeffs1: Array[Double] = Array(-1.0, 3.0)
+//  		val coeffs2: Array[Double] = Array(1.0, 3.0) // задаются для целевой ф-ии
+//  		val coeffs3: Array[Double] = Array(1.0, 2.0)
+//  		val relationship: Relationship = Relationship.LEQ // задаёт отношения
+//  		val relationship2: Relationship = Relationship.GEQ
+//  		val relationship3: Relationship = Relationship.GEQ
+//  		val value: Double = 4.0
+//  		val value2: Double = 1.0
+//  		val value3: Double = 4.0
+//  		val objectiveFunction = new LinearObjectiveFunction(coeffs2, 0.0)
+//  		val constraint: LinearConstraint = new LinearConstraint(coeffs, relationship, value)
+//  		val constraint2: LinearConstraint = new LinearConstraint(coeffs1, relationship2, value2)
+//  		val constraint3: LinearConstraint = new LinearConstraint(coeffs3, relationship3, value3)
+//  
+//  		// Solve the optimization
+//  		val solver = new SimplexSolver() // симплекс-метод
+//  
+//  		val constraintsList2: java.util.List[LinearConstraint] = new ArrayList[LinearConstraint]()
+//  		constraintsList2.add(constraint)
+//  		constraintsList2.add(constraint2)
+//  		constraintsList2.add(constraint3)
+//  		val result: PointValuePair = solver.optimize(objectiveFunction, new LinearConstraintSet(constraintsList2), GoalType.MINIMIZE)  // указывается целевая функция, 																		      //линейные ограничения, тип целевой 																	     // функции - направлена на минимум
+//   		// Print the solution
+//  		println(s"Minimum value: ${result.getValue}") // это результат целевой функции, в итоге выводит это в точке оптимума
+//  		println(s"Solution: ${result.getPoint.mkString(",")}") // значения переменных в точке оптимума
+//  		println("good")
+//  	}
+//  }
+
+
+////task19
+//import org.apache.commons.math3.optim.linear._
+//import org.apache.commons.math3.optim.linear.LinearConstraint
+//import java.util.ArrayList
+//import org.apache.commons.math3.optim.linear.Relationship
+//import org.apache.commons.math3.optim.PointValuePair
+//import org.apache.commons.math3.optim.nonlinear.scalar.GoalType
+//import org.apache.commons.math3.stat.descriptive.{DescriptiveStatistics,SummaryStatistics}
+//
+//object Lab {
+//  def main(args: Array[String]): Unit = {
+//    val data = Array(1.0, 2.0, 3.0, 4.0, 5.0)
+//    val stats1 = new DescriptiveStatistics()
+//    data.foreach(stats1.addValue)
+//    val mean = stats1.getMean()
+//    val stdDev = stats1.getStandardDeviation
+//    val stats2 = new SummaryStatistics()
+//    data.foreach(stats2.addValue)
+//    val mean2 = stats2.getMean()
+//    val stdDev2 = stats2.getStandardDeviation
+//    println(s"Mean1 = ${mean}, stdDev1 = ${stdDev}")
+//    println(s"Mean2 = ${mean2}, stdDev2 = ${stdDev2}")
+//  }
+//}
+   
+
+//task20
+////import java.sq;.{Connection, DriverManager, ResultSet}
+//import java.io.FileInputStream
+//import opennlp.tools.namefind.{NameFinderME, TokenNameFinderModel}
+////import opennlp.tools.tokenize.*
+//import opennlp.tools.util.Span
+//
+//object Lab {
+//    def main(args:Array[String]): Unit = {
+//        val tokenizerModelIn = new FileInputStream("en-token.bin")
+//        val tokenizerModel = new opennlp.tools.tokenize.TokenizerModel(tokenizerModelIn)
+//        val tokenizer = new opennlp.tools.tokenize.TokenizerME(tokenizerModel)
+//        // Load NER model
+//        val nerModelIn = new FileInputStream("en-ner-person.bin")
+//        val nerModel = new TokenNameFinderModel(nerModelIn)
+//        val ner = new NameFinderME(nerModel)
+//
+//  		  // Define some sample text
+//        val text = "John Smith is a software engineer at Google."
+//
+//        // Tokenize the text
+//        val tokens = tokenizer.tokenize(text)
+//
+//  		  // Find the named entities in the text
+//        val spans = ner.find(tokens)
+//
+//        // Print the named entities and their types
+//        for(span <- spans) 
+//        {
+//            val entityType = span.getType
+//            val entity = tokens.slice(span.getStart, span.getEnd).mkString(" ")
+//            println(s"$entityType: $entity")
+//        }
+//    }
+//}
+
+////task21
+//import java.io.FileInputStream
+//import opennlp.tools.namefind.{NameFinderME, TokenNameFinderModel}
+////import opennlp.tools.tokenize.*
+//import opennlp.tools.util.Span
+//
+//object Lab {
+//
+//  def main(args: Array[String]): Unit = {
+//    print("Input text:")
+//    val text: String = scala.io.StdIn.readLine()
+//
+//    val tokenizerModelIn = new FileInputStream("en-token.bin")
+//    val tokenizerModel = new opennlp.tools.tokenize.TokenizerModel(tokenizerModelIn)
+//    val tokenizer = new opennlp.tools.tokenize.TokenizerME(tokenizerModel)
+//
+//    // text = "Rayony kvartyaly zhilie massivy."
+//    val tokens = tokenizer.tokenize(text)               // разделение на токены
+//    for(token <- tokens) {
+//      println(s"$token")
+//    }
+//  }
+//}
+
+////task24
+//import java.awt.image.BufferedImage
+//import java.io.File
+//import javax.imageio.ImageIO
+//import scala.util.Random
+//import org.apache.commons.math3.stat.descriptive.{DescriptiveStatistics, SummaryStatistics}
+//  
+//  object Lab {
+//  	def main(args:Array[String]): Unit = {
+//   		val imagePath = "one.jpg"
+//     	// Load image using ImageIO
+//      val image: BufferedImage = ImageIO.read(new File(imagePath))
+//  
+//      // Get the width and height of the image  // Читаем картинку в массив пикселей, после этого случайными образом отбираем 1000 пикселей. 
+//  	 	val width = image.getWidth 		 
+//      val height = image.getHeight
+//  
+//      // Get the array of pixels from the image
+//      val pixels = Array.ofDim[Int](width * height)
+//  	 	image.getRGB(0, 0, width, height, pixels, 0, width)
+//  	 	for(i <- 0 until 10){
+//  	 	  println(pixels(i))
+//  	 	}
+//    }
+//  }
+
+////task25
+//import java.awt.image.BufferedImage
+//import java.io.File
+//import javax.imageio.ImageIO
+//import scala.util.Random
+//import org.apache.commons.math3.stat.descriptive.{DescriptiveStatistics, SummaryStatistics}
+//  
+//  object Lab {
+//  	def main(args:Array[String]): Unit = {
+//   	val imagePath = "one.jpg"
+//    // Load image using ImageIO
+//    val image: BufferedImage = ImageIO.read(new File(imagePath))
+//  
+//    // Get the width and height of the image  // Читаем картинку в массив пикселей, после этого случайными образом отбираем 1000 пикселей. 
+//  	val width = image.getWidth 		 
+//    val height = image.getHeight
+//  
+//    // Get the array of pixels from the image
+//    val pixels = Array.ofDim[Int](width * height)
+//  	image.getRGB(0, 0, width, height, pixels, 0, width)
+//    val count = 1000
+//    var numbers = List[Double]() // Тут случайно выбранные пиксели хранятся в списке
+//    val random = new Random()
+//  	for(i <- 0 until count) {
+//      var j = random.nextInt(width * height)
+//      numbers = math.abs(pixels(j)) :: numbers // Номера пикселей, пиксель j мы будем добавлять в список numbers
+//  	}
+//    		
+//   	val stats1 = new DescriptiveStatistics() // Находим здесь среднее значение и стандартное отклонение  и дальше выводим
+//    numbers.foreach(stats1.addValue) 	// здесь среднее значение и стандартное отклонение 
+//    val mean = stats1.getMean()		//
+//  	val stdDev = math.sqrt(stats1.getStandardDeviation()) //
+//  
+//    println(s"Mean value: ${mean}") //  и дальше 
+//    println(s"Stdev: ${stdDev}")   // выводим
+//   }
+//  }
+
+
+////task26
+//import java.awt.image.BufferedImage
+//import java.io.File	
+//import javax.imageio.ImageIO
+//import scala.util.Random
+//import org.apache.commons.math3.stat.descriptive.{DescriptiveStatistics, SummaryStatistics}
+//  
+//  object Lab {
+//  	def main(args:Array[String]): Unit = {
+//   	  val imagePath = "one.jpg"
+//     	// Load the image using ImageIO
+//  
+//      var image: BufferedImage = ImageIO.read(new File(imagePath))
+//  		// Get the width and height of image
+//      val width = image.getWidth
+//      val height = image.getHeight
+//      // Get the array of pixels from the image
+//  		val pixels = Array.ofDim[Int](width * height)
+//      image getRGB(0, 0, width, height, pixels, 0, width)
+//      val count = 1000
+//  	  var numbers = List[Double]()
+//  	  var nomers = List[Int]()
+//  	  val random = new Random()
+//  
+//    	for(i <- 0 until count) {
+//      	var j = random.nextInt(width * height)
+//        nomers = j :: nomers
+//  	  	numbers = math.abs(pixels(j)) :: numbers
+//      }
+//    
+//      val stats1 = new DescriptiveStatistics()
+//      numbers.foreach(stats1.addValue)
+//  	 	val mean = stats1.getMean()
+//     	val stdDev = math.sqrt(stats1.getStandardDeviation)
+//      println(s"Mean-1 value: ${mean}")
+//      println(s"Stdev-1: ${stdDev}")
+//  		val imagePath2 = "two.jpg"
+//     	var image2: BufferedImage = ImageIO.read(new File(imagePath2))
+//      val pixels2 = Array.ofDim[Int](width * height)
+//      image2.getRGB(0, 0, width, height, pixels2, 0, width)
+//  
+//    	var numbers2 = List[Double]()
+//      for (i <- 0 until count) {
+//        numbers2 = math.abs(pixels2(nomers(i))) :: numbers2
+//  	 	}
+//       		
+//      val stats2 = new DescriptiveStatistics()
+//      numbers2.foreach(stats2.addValue)
+//  		val mean2 = stats2.getMean()
+//  		val stdDev2 = math.sqrt(stats2.getStandardDeviation)
+//   		println(s"Mean-2 value: ${mean2}") //  и дальше 
+//  		println(s"Stdev-2: ${stdDev2}")   // выводим
+//  	}
+//  }
+
+
