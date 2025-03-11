@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.054 ns
+From           : command_memory_block:inst14|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_v281:auto_generated|ram_block1a0~porta_address_reg7
+To             : DATA_BUS[0]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 54.59 MHz ( period = 18.320 ns )
+From           : command_memory_block:inst14|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_v281:auto_generated|ram_block1a0~porta_address_reg7
+To             : register_block:inst2|lpm_dff4:inst20|lpm_ff:lpm_ff_component|dffs[5]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : control_block:inst16|lpm_dff3:ADDRESS_REGISTER|lpm_ff:lpm_ff_component|dffs[2]
+To             : command_memory_block:inst14|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_v281:auto_generated|ram_block1a0~porta_address_reg2
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 48
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 48
+
+--------------------------------------------------------------------------------------
+

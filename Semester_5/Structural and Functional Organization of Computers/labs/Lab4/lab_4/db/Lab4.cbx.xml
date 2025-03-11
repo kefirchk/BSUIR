@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Lab4">
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|command_memory_block:inst14|lpm_compare0:inst2|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_h8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|command_memory_block:inst14|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v281.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_add_sub0:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_t7i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|register_block:inst2|lpm_decode2:inst6|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_e9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_add_sub1:inst7|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_elh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_add_sub2:inst31|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_3qh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_compare3:inst15|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_h8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_vaj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|control_block:inst16|lpm_decode0:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_e9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|data_memory_block:inst17|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nkc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|register_block:inst2|lpm_decode1:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_u7f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_block|data_memory_block:inst17|lpm_compare2:inst4|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_i8j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
