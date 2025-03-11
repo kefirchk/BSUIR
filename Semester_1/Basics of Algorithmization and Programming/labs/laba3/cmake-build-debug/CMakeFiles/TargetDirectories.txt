@@ -1,3 +1,0 @@
-D:/Projects/OAandP_projects/my_programs/laba3/cmake-build-debug/CMakeFiles/dz2.dir
-D:/Projects/OAandP_projects/my_programs/laba3/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Projects/OAandP_projects/my_programs/laba3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

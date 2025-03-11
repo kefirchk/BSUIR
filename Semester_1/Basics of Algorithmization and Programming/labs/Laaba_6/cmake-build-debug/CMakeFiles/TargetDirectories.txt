@@ -1,3 +1,0 @@
-D:/Projects/OAandP_projects/my_programs/Laaba_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Projects/OAandP_projects/my_programs/Laaba_6/cmake-build-debug/CMakeFiles/Laaba_6.dir
-D:/Projects/OAandP_projects/my_programs/Laaba_6/cmake-build-debug/CMakeFiles/edit_cache.dir
