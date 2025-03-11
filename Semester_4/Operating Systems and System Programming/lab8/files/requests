@@ -1,0 +1,7 @@
+ECHO 1.
+INFO
+ECHO 2.
+LIST
+ECHO 3.
+CD ../
+ECHO the end
