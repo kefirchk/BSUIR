@@ -1,0 +1,3 @@
+D:/Projects/OAandP_projects/my_programs/program_cooler_than_Luzik_have/cmake-build-debug/CMakeFiles/program_cooler_than_Luzik_have.dir
+D:/Projects/OAandP_projects/my_programs/program_cooler_than_Luzik_have/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/OAandP_projects/my_programs/program_cooler_than_Luzik_have/cmake-build-debug/CMakeFiles/rebuild_cache.dir

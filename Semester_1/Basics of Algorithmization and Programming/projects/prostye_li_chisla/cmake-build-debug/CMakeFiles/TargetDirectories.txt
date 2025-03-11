@@ -1,0 +1,3 @@
+D:/Projects/finding_simple_numbers_in_some_interval/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Projects/finding_simple_numbers_in_some_interval/cmake-build-debug/CMakeFiles/finding_simple_numbers_in_some_interval.dir
+D:/Projects/finding_simple_numbers_in_some_interval/cmake-build-debug/CMakeFiles/edit_cache.dir
