@@ -1,0 +1,13 @@
+1. READ, Address=216 			(12 тактов)	- MISS (кэш пустой)
+2. READ, Address=217 			(2 такта)   	- HIT
+3. READ, Address=226 			(12 тактов) 	- MISS (кэш пустой)
+4. WRITE, Address=217, Write_data=144 	(2 такта)	- HIT
+5. READ, Address=217 			(2 такта)	- HIT
+6. WRITE, Address=248, Write_data=192 	(12 тактов)	- MISS (кэш пустой)
+7. WRITE, Address=248, Write_data=200 	(2 такта)	- HIT
+8. READ, Address=203 			(12 тактов)	- MISS (без выгрузки)
+9. WRITE, Address=212, Write_data=28 	(12 тактов)	- MISS (без выгрузки)
+10. READ, Address=210 			(2 такта)	- HIT
+11. WRITE, Address=210, Write_data=28 	(2 такта) 	- HIT
+12. WRITE, Address=232, Write_data=64 	(20 тактов)	- MISS (выгрузка кэш-линии)
+13. READ, Address=240 			(20 тактов)	- MISS (выгрузка кэш-линии)

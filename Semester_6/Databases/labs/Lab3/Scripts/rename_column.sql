@@ -1,0 +1,1 @@
+ALTER TABLE main_scheme.student RENAME COLUMN middle_name TO patronymic;
