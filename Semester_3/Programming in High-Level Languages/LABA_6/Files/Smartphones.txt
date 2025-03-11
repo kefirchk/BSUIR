@@ -1,0 +1,3 @@
+apple              |150      5000                     ipss      |80                   
+samsung            |160      4500                     oled      |48                   
+realme             |170      5000                     amoled    |50                   

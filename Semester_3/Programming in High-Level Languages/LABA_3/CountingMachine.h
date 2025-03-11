@@ -1,0 +1,29 @@
+#pragma once
+#include"Functions.h"
+class CountingMachine                         //класс "Вычислительная машина"
+{
+protected:
+	char brand[80];   //производитель
+	int weight;    //вес
+public:
+
+	CountingMachine();                            //конструктор без параметров
+	CountingMachine(char* name, int w);           //конструктор с параметрами
+	CountingMachine(const CountingMachine &CM);   //конструктор копирования
+	CountingMachine(CountingMachine && CM);       //конструктор перемещения
+	~CountingMachine();                           //деструктор
+
+	CountingMachine& operator=(const CountingMachine& CM);   //оператор присваивания
+	CountingMachine& operator=(CountingMachine && CM);       //оператор присваивания перемещения
+
+	void setBrand(char*);  //метод задания названия марки
+	void setWeight(int);   //метод задания веса
+	char* getBrand();      //метод получения названия марки
+	int getWeight();       //метод получения веса
+
+	virtual void outputHat();  //шапка таблицы
+	virtual void endOfTable(); //конец таблицы(подрисовка)
+
+	friend ostream& operator<<(ostream& out, const CountingMachine& CM); //оператор << для вывода
+	friend istream& operator>>(istream& in, CountingMachine& CM);        //оператор >> для ввода
+};

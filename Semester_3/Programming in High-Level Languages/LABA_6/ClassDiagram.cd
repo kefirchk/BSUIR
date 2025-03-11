@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TreeNode&lt;T&gt;">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAgAAIAAAAAAAAAJAACBAIAACAAAAQAgAAgAA=</HashCode>
+      <FileName>BinaryTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree&lt;T&gt;">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACEAAgICggCAIAgEAACEBEQQAAACABACAAGAAA=</HashCode>
+      <FileName>BinaryTree.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="root" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exception">
+    <Position X="15.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAIQAAAABAAABAAAAAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputException">
+    <Position X="17.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAACAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileException">
+    <Position X="15.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAGAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContainerException">
+    <Position X="14" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interface&lt;T&gt;">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAgAAAABAhAARIAAEGAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountingMachine">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAAGAAAgAAAgAAAAAAAEQAAAgAAAgBABEAAA=</HashCode>
+      <FileName>CountingMachine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monoblock">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAAAKAAEAAAAAAAgAAUAAAIQiQAAAAAAgRgAEAAA=</HashCode>
+      <FileName>Monoblock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notebook">
+    <Position X="1.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgADAAEAAAEAAAgAARAAAAAgIAACAAAgTgAEAAA=</HashCode>
+      <FileName>Notebook.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PortableCM">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAUAAAAAAAgAAAAABAEAAAAAAAAgBAAEAAA=</HashCode>
+      <FileName>PortableCM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smartphone">
+    <Position X="4.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAEAAAAAQIgEAQAAAAAgBABAAAAwRgAEAAA=</HashCode>
+      <FileName>Smartphone.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StationaryCM">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAEAAAgAAAgAAAACACAAAAAAAAAgBAAGAAA=</HashCode>
+      <FileName>StationaryCM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinFile&lt;T&gt;">
+    <Position X="9.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAgABI=</HashCode>
+      <FileName>BinFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="File">
+    <Position X="10.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAQAAAECAAAARAAAAAAAAA=</HashCode>
+      <FileName>File.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TxtFile&lt;T&gt;">
+    <Position X="11.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACBAAAAAAAACAAAAAAAAAAEAAEgAAQAAAAAAAI=</HashCode>
+      <FileName>TxtFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="COLORS">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAgAQECgBQMAAAAAQAAAAAgAAFJQBEAQAhAAAEAA=</HashCode>
+      <FileName>Interface.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
